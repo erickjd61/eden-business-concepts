@@ -42,7 +42,7 @@ function Home() {
     <main>
       {/* HERO */}
       <header className="hero">
-        <div className="hero-bg" style={{ backgroundImage: "url('/img/hero/landscape-placeholder.jpg')" }} />
+        <div className="hero-bg" style={{ backgroundImage: "url('/img/hero/strategic-teamwork.jpg')" }} />
         <div className="hero-scrim" />
         <div className="hero-inner wrap">
           <span className="kicker">Comprehensive Business Scaling · Leadership Formation · Since 1991</span>
@@ -126,6 +126,20 @@ function Home() {
               family-held company, you rarely get one without the other.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* PHOTO BAND — strategic teamwork */}
+      <section className="photo-band" aria-label="A strategy session in progress">
+        <div className="pb-bg" style={{ backgroundImage: "url('/img/teamwork/strategy-session.jpg')" }} />
+        <div className="pb-scrim" />
+        <div className="wrap">
+          <span className="kicker">In the room</span>
+          <h2>The real work happens <em>around the table.</em></h2>
+          <p>
+            Systems and books matter, but the change happens in the room — with your team, on the
+            problems that actually move the company.
+          </p>
         </div>
       </section>
 

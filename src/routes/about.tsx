@@ -16,6 +16,9 @@ function About() {
           </p>
         </div>
       </section>
+      <div className="about-banner">
+        <img src="/img/people/team-together.jpg" alt="The Eden team working through a problem together" loading="lazy" />
+      </div>
       <section className="prose">
         <div className="wrap">
           <h2>The firm</h2>

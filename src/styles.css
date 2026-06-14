@@ -4,19 +4,21 @@
    warm-dark + brass-gold + cream · DM Serif Display / Newsreader / Space Mono
    ============================================================ */
 :root{
-  --ink:#16130D;          /* warm near-black — primary dark */
-  --ink2:#1E1A11;         /* one step up — bands, cards */
-  --ink3:#0C0A07;         /* deepest — footer */
-  --cream:#F4EEE1;        /* warm paper — light sections */
-  --cream2:#EDE6D6;       /* alt light */
-  --cream-dim:#CFC6B2;    /* secondary text on dark */
-  --ink-soft:#4A4436;     /* body text on cream */
-  --ink-mute:#6B6354;     /* muted text on cream */
-  --gold:#C2922E;         /* accent / pop */
-  --gold-br:#DBA63E;      /* gold on dark */
-  --forest:#2E5E3A;       /* secondary accent */
-  --line:rgba(244,238,225,.14);   /* hairline on dark */
-  --line-d:rgba(22,19,13,.14);    /* hairline on cream */
+  /* ── Palladian palette · source: Eden — Palette Comparison.html (Sheet 3)
+     Warm cream + navy ink + terracotta & amber. Light, warm, credible. ── */
+  --ink:#1B2632;          /* Anchorfish navy — ink on cream + dark bands */
+  --ink2:#243341;         /* one step up — bands, cards on navy */
+  --ink3:#141D27;         /* deepest navy — footer */
+  --cream:#EEE9DF;        /* Palladian — warm paper, light sections */
+  --cream2:#E6E0D3;       /* Oatmeal-warmed — alt light */
+  --cream-dim:#C9C1B1;    /* Oatmeal — secondary text on navy */
+  --ink-soft:#5F5D50;     /* warm gray — body text on cream */
+  --ink-mute:#837F70;     /* muted — secondary text on cream */
+  --gold:#A35139;         /* Truffle terracotta — accent on light */
+  --gold-br:#FFB162;      /* Burning Flame amber — accent on navy */
+  --forest:#2C3B4D;       /* Blue Fantastic — cool secondary */
+  --line:rgba(238,233,223,.16);   /* cream hairline on navy */
+  --line-d:rgba(27,38,50,.13);    /* navy hairline on cream */
   --serif:'DM Serif Display', Georgia, serif;
   --body:'Newsreader', Georgia, serif;
   --mono:'Space Mono', ui-monospace, monospace;
@@ -35,8 +37,8 @@ img{max-width:100%;display:block}
 /* buttons */
 .btn{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;padding:14px 26px;border-radius:2px;display:inline-block;transition:transform .15s ease,background .15s ease,border-color .15s ease}
 .btn:hover{transform:translateY(-1px)}
-.btn-gold{background:var(--gold);color:var(--ink)}
-.btn-gold:hover{background:var(--gold-br)}
+.btn-gold{background:var(--gold);color:#FBF7EF}
+.btn-gold:hover{background:#B65B41}
 .btn-ghost{border:1px solid var(--cream-dim);color:var(--cream)}
 .btn-ghost:hover{border-color:var(--cream)}
 .btn-dark{background:var(--ink);color:var(--cream)}
@@ -44,7 +46,7 @@ img{max-width:100%;display:block}
 
 /* NAV — transparent over hero, solid elsewhere via .solid */
 .site-nav{position:absolute;top:0;left:0;right:0;z-index:30}
-.site-nav.solid{position:sticky;background:rgba(22,19,13,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-nav.solid{position:sticky;background:rgba(27,38,50,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:92px}
 .logo{display:flex;align-items:baseline;gap:9px}
 .logo .e{font-family:var(--serif);font-style:italic;font-size:33px;color:var(--gold-br)}
@@ -58,7 +60,7 @@ img{max-width:100%;display:block}
 /* HERO */
 .hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center 42%}
-.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,19,13,.74) 0%,rgba(22,19,13,.34) 36%,rgba(22,19,13,.66) 74%,rgba(22,19,13,.97) 100%)}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,29,39,.55) 0%,rgba(20,29,39,.26) 36%,rgba(20,29,39,.62) 74%,rgba(20,29,39,.97) 100%)}
 .hero-inner{position:relative;padding-bottom:72px;width:100%}
 .hero .kicker{font-size:14.5px;letter-spacing:.18em}
 .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.6vw,92px);line-height:1.0;letter-spacing:-.01em;margin-top:20px;max-width:16ch}
@@ -100,7 +102,7 @@ img{max-width:100%;display:block}
 .pillar .micro{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.05em;margin-top:14px;text-transform:uppercase;line-height:1.5}
 .pillar .proof{font-size:14.5px;color:var(--cream-dim);margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
 .pillar .proof b{color:var(--gold-br);font-weight:400}
-.pillar.feature{background:linear-gradient(160deg,#241d10,#1a160e);border-top:2px solid var(--gold)}
+.pillar.feature{background:linear-gradient(160deg,#243341,#1b2632);border-top:2px solid var(--gold)}
 .pillar a.more{font-family:var(--mono);font-size:12px;color:var(--gold-br);letter-spacing:.04em;margin-top:16px;display:inline-block}
 .pillar a.more:hover{text-decoration:underline}
 @media(max-width:760px){.grid4{grid-template-columns:1fr}}
@@ -119,8 +121,8 @@ img{max-width:100%;display:block}
 .shelf-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
 .shelf-head p{color:var(--cream-dim);max-width:46ch;font-size:18px}
 .shelf{margin-top:46px;display:flex;align-items:flex-end;gap:10px;padding:0 4px 0;overflow-x:auto}
-.shelf-board{height:10px;background:#000;border-radius:2px;box-shadow:0 8px 18px rgba(0,0,0,.4)}
-.book{flex:0 0 auto;height:280px;border-radius:2px 2px 0 0;overflow:hidden;box-shadow:0 12px 26px rgba(0,0,0,.45);transition:transform .18s ease}
+.shelf-board{height:10px;background:var(--ink3);border-radius:2px;box-shadow:0 8px 18px rgba(20,29,39,.4)}
+.book{flex:0 0 auto;height:280px;border-radius:2px 2px 0 0;overflow:hidden;box-shadow:0 12px 26px rgba(20,29,39,.45);transition:transform .18s ease}
 .book img{height:280px;width:auto;display:block}
 .book:hover{transform:translateY(-8px)}
 .spine-forthcoming{flex:0 0 auto;writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--cream-dim);padding:16px 0;width:42px;height:280px;display:flex;align-items:center;justify-content:center;border:1px dashed var(--cream-dim);border-radius:2px 2px 0 0;text-transform:uppercase}
@@ -169,7 +171,7 @@ img{max-width:100%;display:block}
 
 /* books cover grid (on dark prose) */
 .cover-grid{margin:0 0 16px;display:flex;gap:22px;flex-wrap:wrap}
-.cover-grid img{height:260px;width:auto;border-radius:3px;box-shadow:0 12px 26px rgba(0,0,0,.5)}
+.cover-grid img{height:260px;width:auto;border-radius:3px;box-shadow:0 12px 26px rgba(27,38,50,.22)}
 
 /* ---- framework graphics ---- */
 .fw-graphic{width:100%;max-width:720px;height:auto;margin:8px 0 4px}
@@ -180,7 +182,7 @@ img{max-width:100%;display:block}
 .fq-tag{font-family:var(--mono);font-size:10.5px;color:var(--cream-dim);letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:600px){.fq-grid{grid-template-columns:1fr}}
 .arc{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;max-width:680px;margin:18px 0;position:relative}
-.arc::before{content:'';position:absolute;top:7px;left:7%;right:7%;height:2px;background:linear-gradient(90deg,rgba(244,238,225,.18),var(--gold-br))}
+.arc::before{content:'';position:absolute;top:7px;left:7%;right:7%;height:2px;background:linear-gradient(90deg,rgba(238,233,223,.2),var(--gold-br))}
 .arc-step{display:flex;flex-direction:column;align-items:center;gap:14px;flex:1;position:relative;z-index:1}
 .arc-dot{width:16px;height:16px;border-radius:50%;background:var(--ink);border:2px solid var(--cream-dim)}
 .arc-dot[data-last="true"]{background:var(--gold-br);border-color:var(--gold-br)}
@@ -188,7 +190,7 @@ img{max-width:100%;display:block}
 
 /* ---- even pillars w/ icons (rebalanced) ---- */
 .grid4.even .pillar{display:flex;flex-direction:column;background:var(--ink);transition:background .15s ease}
-.grid4.even .pillar:hover{background:#1c180f}
+.grid4.even .pillar:hover{background:#243341}
 .pillar-icon{color:var(--gold-br);margin-bottom:18px;display:block}
 .grid4.even .pillar .num{color:var(--cream-dim)}
 .grid4.even .pillar h3{font-size:24px}
@@ -215,7 +217,7 @@ img{max-width:100%;display:block}
 /* ---- books list ---- */
 .book-list{display:grid;grid-template-columns:1fr 1fr;gap:36px 48px;margin-top:8px}
 .book-row{display:flex;gap:22px;align-items:flex-start;color:inherit}
-.book-row img{width:110px;height:auto;flex:0 0 auto;border-radius:3px;box-shadow:0 10px 22px rgba(0,0,0,.5);transition:transform .15s ease}
+.book-row img{width:110px;height:auto;flex:0 0 auto;border-radius:3px;box-shadow:0 10px 22px rgba(27,38,50,.2);transition:transform .15s ease}
 .book-row:hover img{transform:translateY(-4px)}
 .book-row h3{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--cream);line-height:1.1}
 .book-row p{font-size:15.5px;color:var(--cream-dim);margin-top:8px;line-height:1.5}
@@ -231,7 +233,7 @@ img{max-width:100%;display:block}
 /* Four Questions — richer, fills width, even cells */
 .fq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--line);margin:8px 0;max-width:none;width:100%}
 .fq{position:relative;background:var(--ink);padding:34px 30px;min-height:150px;display:flex;align-items:center;overflow:hidden;transition:background .15s ease}
-.fq:hover{background:#1c180f}
+.fq:hover{background:#243341}
 .fq-bg{position:absolute;right:14px;top:-14px;font-family:var(--serif);font-size:96px;line-height:1;color:var(--gold-br);opacity:.10;pointer-events:none}
 .fq-body{position:relative;display:flex;flex-direction:column;gap:8px}
 .fq-tag{font-family:var(--mono);font-size:11px;color:var(--gold-br);letter-spacing:.14em;text-transform:uppercase}
@@ -266,8 +268,45 @@ img{max-width:100%;display:block}
 
 /* ---- vertical steps (conflict) ---- */
 .steps{list-style:none;margin:36px 0 0;padding:0;max-width:680px;position:relative}
-.steps::before{content:'';position:absolute;left:19px;top:14px;bottom:14px;width:2px;background:linear-gradient(180deg,rgba(22,19,13,.18),var(--gold))}
+.steps::before{content:'';position:absolute;left:19px;top:14px;bottom:14px;width:2px;background:linear-gradient(180deg,rgba(27,38,50,.18),var(--gold))}
 .step{display:flex;gap:22px;align-items:flex-start;padding:14px 0;position:relative}
 .step-n{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:var(--cream);border:2px solid var(--gold);color:var(--ink);font-family:var(--mono);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
 .step h3{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--ink);line-height:1.1}
 .step p{font-size:16px;color:var(--ink-soft);margin-top:4px;line-height:1.5}
+
+
+/* ============================================================
+   PALLADIAN v3 — light-first adjustments
+   Source of truth: Eden Website Assets / Eden — Palette Comparison.html
+   Cream #EEE9DF · navy #1B2632 · terracotta #A35139 · amber #FFB162
+   ============================================================ */
+
+/* Long-form reading pages sit on warm cream with navy ink (were dark). */
+.prose{background:var(--cream);color:var(--ink)}
+.prose h2{color:var(--ink)}
+.prose h2 em{color:var(--gold)}
+.prose p{color:var(--ink-soft)}
+.prose p b{color:var(--ink)}
+.prose .kicker{color:var(--gold)}
+.prose .lede{color:var(--ink-soft)}
+.prose .note{color:var(--gold);border-left-color:var(--gold)}
+.prose .book-row h3{color:var(--ink)}
+.prose .book-row p{color:var(--ink-soft)}
+.prose .book-row .amz{color:var(--gold)}
+
+/* ghost button reads on a light canvas (navy outline, not cream) */
+.prose .btn-ghost{border-color:var(--ink);color:var(--ink)}
+.prose .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ── strategic-teamwork photography ── */
+.about-banner{margin:0;line-height:0;border-bottom:1px solid var(--line-d)}
+.about-banner img{width:100%;height:clamp(220px,38vw,440px);object-fit:cover;object-position:center 38%}
+
+.photo-band{position:relative;min-height:clamp(300px,44vw,480px);display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
+.photo-band .pb-bg{position:absolute;inset:0;background-size:cover;background-position:center 42%}
+.photo-band .pb-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,29,39,.42) 0%,rgba(20,29,39,.30) 46%,rgba(20,29,39,.88) 100%)}
+.photo-band .wrap{position:relative;padding:52px 0}
+.photo-band .kicker{color:var(--gold-br)}
+.photo-band h2{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3.4vw,42px);line-height:1.12;color:var(--cream);max-width:24ch;margin-top:12px}
+.photo-band h2 em{font-style:italic;color:var(--gold-br)}
+.photo-band p{margin-top:16px;max-width:54ch;color:var(--cream-dim);font-size:18px}
