@@ -1,12 +1,17 @@
+import { Link } from '@tanstack/react-router'
+
 export function SiteFooter() {
+  const year = new Date().getFullYear()
   return (
     <footer className="site-footer">
-      <div className="wrap inner">
-        <div>© {new Date().getFullYear()} Eden Business Concepts, LLC · Innovating Workplaces That Thrive</div>
+      <div className="wrap foot-in">
+        <div>© {year} Eden Business Concepts, LLC · Lafayette, IN &amp; Chicago, IL</div>
         <div className="foot-links">
+          <Link to="/scaling">Scaling</Link>
+          <Link to="/leadership">Leadership</Link>
+          <Link to="/books">Books</Link>
+          <Link to="/about">About</Link>
           <a href="https://www.linkedin.com/company/eden-business-concepts-llc/">LinkedIn</a>
-          <a href="https://www.facebook.com/edenbusinessconcepts">Facebook</a>
-          <a href="https://www.youtube.com/channel/UCwNwuGX2m_HnkscE-jpM3Gw">YouTube</a>
         </div>
       </div>
     </footer>

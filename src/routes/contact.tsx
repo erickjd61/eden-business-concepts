@@ -1,21 +1,40 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/contact')({
-  head: () => ({ meta: [{ title: 'Contact · Eden Business Concepts' }] }),
-  component: Page,
-})
+export const Route = createFileRoute('/contact')({ component: Contact })
 
-function Page() {
+function Contact() {
   return (
-    <div className="page wrap">
-      <p className="eyebrow">Contact</p>
-      <h1 style={{ marginTop: 18 }}>Ready to <em>flourish</em>? Let's talk.</h1>
-      <p className="lede">A conversation costs nothing and usually clarifies everything.</p>
-      <h2>John D. Erickson, DMin</h2>
-      <p><a href="mailto:john@edenbusinessconcepts.com">john@edenbusinessconcepts.com</a> · 800-765-7450 Ext. 1</p>
-      <h2>Dennis R. Humphrey, PhD</h2>
-      <p><a href="mailto:dennis@edenbusinessconcepts.com">dennis@edenbusinessconcepts.com</a> · 800-765-7450 Ext. 2</p>
-      <p className="muted" style={{ marginTop: 40 }}>{'{BUILD NOTE: contact form lands here — Formspree per the XTRM pattern, or re-embedded LeadConnector, pending the plumbing decision in the Migration Plan §5.}'}</p>
-    </div>
+    <main>
+      <section className="page-hero">
+        <div className="wrap">
+          <span className="kicker">Let's talk</span>
+          <h1>A conversation costs nothing — and usually <em>clarifies everything.</em></h1>
+          <p className="lede">
+            Tell us where the company is and what's keeping you up at night. We'll tell you,
+            honestly, whether and how we can help.
+          </p>
+        </div>
+      </section>
+      <section className="prose">
+        <div className="wrap">
+          <h2>Reach us</h2>
+          <p>
+            <b>Email</b><br />
+            <a href="mailto:john@edenbusinessconcepts.com" style={{ color: 'var(--gold-br)' }}>john@edenbusinessconcepts.com</a>
+          </p>
+          <p>
+            <b>Phone</b><br />
+            <a href="tel:18472046570" style={{ color: 'var(--gold-br)' }}>847-204-6570</a>
+          </p>
+          <p>
+            <b>Offices</b><br />
+            Lafayette, Indiana &amp; Chicago, Illinois
+          </p>
+          <p className="note">
+            A contact form will live here — wiring it to delivery is a quick next step.
+          </p>
+        </div>
+      </section>
+    </main>
   )
 }

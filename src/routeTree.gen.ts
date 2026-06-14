@@ -9,35 +9,29 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WhatDrivesUsRouteImport } from './routes/what-drives-us'
 import { Route as ThriveSpaceRouteImport } from './routes/thrive-space'
-import { Route as TeamRouteImport } from './routes/team'
-import { Route as ForumsRouteImport } from './routes/forums'
+import { Route as ScalingRouteImport } from './routes/scaling'
+import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ConflictRouteImport } from './routes/conflict'
 import { Route as BooksRouteImport } from './routes/books'
+import { Route as AdvisingRouteImport } from './routes/advising'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ServicesIndexRouteImport } from './routes/services.index'
-import { Route as ServicesTeamOptimizationRouteImport } from './routes/services.team-optimization'
-import { Route as ServicesStrategicAdvisingRouteImport } from './routes/services.strategic-advising'
 
-const WhatDrivesUsRoute = WhatDrivesUsRouteImport.update({
-  id: '/what-drives-us',
-  path: '/what-drives-us',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ThriveSpaceRoute = ThriveSpaceRouteImport.update({
   id: '/thrive-space',
   path: '/thrive-space',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TeamRoute = TeamRouteImport.update({
-  id: '/team',
-  path: '/team',
+const ScalingRoute = ScalingRouteImport.update({
+  id: '/scaling',
+  path: '/scaling',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ForumsRoute = ForumsRouteImport.update({
-  id: '/forums',
-  path: '/forums',
+const LeadershipRoute = LeadershipRouteImport.update({
+  id: '/leadership',
+  path: '/leadership',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -45,9 +39,24 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConflictRoute = ConflictRouteImport.update({
+  id: '/conflict',
+  path: '/conflict',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BooksRoute = BooksRouteImport.update({
   id: '/books',
   path: '/books',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdvisingRoute = AdvisingRouteImport.update({
+  id: '/advising',
+  path: '/advising',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -55,122 +64,91 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ServicesIndexRoute = ServicesIndexRouteImport.update({
-  id: '/services/',
-  path: '/services/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServicesTeamOptimizationRoute =
-  ServicesTeamOptimizationRouteImport.update({
-    id: '/services/team-optimization',
-    path: '/services/team-optimization',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ServicesStrategicAdvisingRoute =
-  ServicesStrategicAdvisingRouteImport.update({
-    id: '/services/strategic-advising',
-    path: '/services/strategic-advising',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/advising': typeof AdvisingRoute
   '/books': typeof BooksRoute
+  '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
-  '/forums': typeof ForumsRoute
-  '/team': typeof TeamRoute
+  '/leadership': typeof LeadershipRoute
+  '/scaling': typeof ScalingRoute
   '/thrive-space': typeof ThriveSpaceRoute
-  '/what-drives-us': typeof WhatDrivesUsRoute
-  '/services/strategic-advising': typeof ServicesStrategicAdvisingRoute
-  '/services/team-optimization': typeof ServicesTeamOptimizationRoute
-  '/services/': typeof ServicesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/advising': typeof AdvisingRoute
   '/books': typeof BooksRoute
+  '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
-  '/forums': typeof ForumsRoute
-  '/team': typeof TeamRoute
+  '/leadership': typeof LeadershipRoute
+  '/scaling': typeof ScalingRoute
   '/thrive-space': typeof ThriveSpaceRoute
-  '/what-drives-us': typeof WhatDrivesUsRoute
-  '/services/strategic-advising': typeof ServicesStrategicAdvisingRoute
-  '/services/team-optimization': typeof ServicesTeamOptimizationRoute
-  '/services': typeof ServicesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/advising': typeof AdvisingRoute
   '/books': typeof BooksRoute
+  '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
-  '/forums': typeof ForumsRoute
-  '/team': typeof TeamRoute
+  '/leadership': typeof LeadershipRoute
+  '/scaling': typeof ScalingRoute
   '/thrive-space': typeof ThriveSpaceRoute
-  '/what-drives-us': typeof WhatDrivesUsRoute
-  '/services/strategic-advising': typeof ServicesStrategicAdvisingRoute
-  '/services/team-optimization': typeof ServicesTeamOptimizationRoute
-  '/services/': typeof ServicesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/about'
+    | '/advising'
     | '/books'
+    | '/conflict'
     | '/contact'
-    | '/forums'
-    | '/team'
+    | '/leadership'
+    | '/scaling'
     | '/thrive-space'
-    | '/what-drives-us'
-    | '/services/strategic-advising'
-    | '/services/team-optimization'
-    | '/services/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/about'
+    | '/advising'
     | '/books'
+    | '/conflict'
     | '/contact'
-    | '/forums'
-    | '/team'
+    | '/leadership'
+    | '/scaling'
     | '/thrive-space'
-    | '/what-drives-us'
-    | '/services/strategic-advising'
-    | '/services/team-optimization'
-    | '/services'
   id:
     | '__root__'
     | '/'
+    | '/about'
+    | '/advising'
     | '/books'
+    | '/conflict'
     | '/contact'
-    | '/forums'
-    | '/team'
+    | '/leadership'
+    | '/scaling'
     | '/thrive-space'
-    | '/what-drives-us'
-    | '/services/strategic-advising'
-    | '/services/team-optimization'
-    | '/services/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AdvisingRoute: typeof AdvisingRoute
   BooksRoute: typeof BooksRoute
+  ConflictRoute: typeof ConflictRoute
   ContactRoute: typeof ContactRoute
-  ForumsRoute: typeof ForumsRoute
-  TeamRoute: typeof TeamRoute
+  LeadershipRoute: typeof LeadershipRoute
+  ScalingRoute: typeof ScalingRoute
   ThriveSpaceRoute: typeof ThriveSpaceRoute
-  WhatDrivesUsRoute: typeof WhatDrivesUsRoute
-  ServicesStrategicAdvisingRoute: typeof ServicesStrategicAdvisingRoute
-  ServicesTeamOptimizationRoute: typeof ServicesTeamOptimizationRoute
-  ServicesIndexRoute: typeof ServicesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/what-drives-us': {
-      id: '/what-drives-us'
-      path: '/what-drives-us'
-      fullPath: '/what-drives-us'
-      preLoaderRoute: typeof WhatDrivesUsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/thrive-space': {
       id: '/thrive-space'
       path: '/thrive-space'
@@ -178,18 +156,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ThriveSpaceRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/team': {
-      id: '/team'
-      path: '/team'
-      fullPath: '/team'
-      preLoaderRoute: typeof TeamRouteImport
+    '/scaling': {
+      id: '/scaling'
+      path: '/scaling'
+      fullPath: '/scaling'
+      preLoaderRoute: typeof ScalingRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/forums': {
-      id: '/forums'
-      path: '/forums'
-      fullPath: '/forums'
-      preLoaderRoute: typeof ForumsRouteImport
+    '/leadership': {
+      id: '/leadership'
+      path: '/leadership'
+      fullPath: '/leadership'
+      preLoaderRoute: typeof LeadershipRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -199,11 +177,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/conflict': {
+      id: '/conflict'
+      path: '/conflict'
+      fullPath: '/conflict'
+      preLoaderRoute: typeof ConflictRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/books': {
       id: '/books'
       path: '/books'
       fullPath: '/books'
       preLoaderRoute: typeof BooksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advising': {
+      id: '/advising'
+      path: '/advising'
+      fullPath: '/advising'
+      preLoaderRoute: typeof AdvisingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -213,41 +212,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/services/': {
-      id: '/services/'
-      path: '/services'
-      fullPath: '/services/'
-      preLoaderRoute: typeof ServicesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services/team-optimization': {
-      id: '/services/team-optimization'
-      path: '/services/team-optimization'
-      fullPath: '/services/team-optimization'
-      preLoaderRoute: typeof ServicesTeamOptimizationRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services/strategic-advising': {
-      id: '/services/strategic-advising'
-      path: '/services/strategic-advising'
-      fullPath: '/services/strategic-advising'
-      preLoaderRoute: typeof ServicesStrategicAdvisingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AdvisingRoute: AdvisingRoute,
   BooksRoute: BooksRoute,
+  ConflictRoute: ConflictRoute,
   ContactRoute: ContactRoute,
-  ForumsRoute: ForumsRoute,
-  TeamRoute: TeamRoute,
+  LeadershipRoute: LeadershipRoute,
+  ScalingRoute: ScalingRoute,
   ThriveSpaceRoute: ThriveSpaceRoute,
-  WhatDrivesUsRoute: WhatDrivesUsRoute,
-  ServicesStrategicAdvisingRoute: ServicesStrategicAdvisingRoute,
-  ServicesTeamOptimizationRoute: ServicesTeamOptimizationRoute,
-  ServicesIndexRoute: ServicesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

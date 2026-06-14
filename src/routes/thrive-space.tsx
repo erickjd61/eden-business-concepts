@@ -1,17 +1,30 @@
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/thrive-space')({
-  head: () => ({ meta: [{ title: 'Thrive Space · Growing the Heart of Your Business' }] }),
+  head: () => ({ meta: [{ title: 'Thrive Space · Eden Business Concepts' }] }),
   component: Page,
 })
 
 function Page() {
   return (
-    <div className="page wrap">
-      <p className="eyebrow">Thrive Space</p>
-      <h1 style={{ marginTop: 18 }}>Growing the heart of your <em>business</em>.</h1>
-      <p className="lede">Perspectives and tools for leaders who would rather flourish than flounder.</p>
-      <p className="muted">{'{BUILD NOTE: blog index renders here once the WordPress export is converted — 24 posts migrate to /thrive-space/[slug], slugs preserved.}'}</p>
-    </div>
+    <main>
+      <section className="page-hero">
+        <div className="wrap">
+          <span className="kicker">Thrive Space</span>
+          <h1>Growing the heart of your <em>business.</em></h1>
+          <p className="lede">
+            Perspectives and tools for leaders who want to build something that lasts.
+          </p>
+        </div>
+      </section>
+      <section className="prose">
+        <div className="wrap">
+          <p className="note">
+            Twenty-four articles from our archive are being brought over here. The reading
+            experience is the next piece to build.
+          </p>
+        </div>
+      </section>
+    </main>
   )
 }

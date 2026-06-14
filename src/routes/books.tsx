@@ -1,37 +1,56 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/books')({
-  head: () => ({ meta: [{ title: 'The Books · Eden Business Concepts' }] }),
-  component: Page,
-})
+export const Route = createFileRoute('/books')({ component: Books })
 
-function Page() {
+const BOOKS = [
+  ['/img/books/leaders-motivation.jpg', "The Leader's Motivation",
+    'Awakening the inner forces that shape how you lead — the root motivations beneath every decision.', 'https://a.co/d/04Xwfn5a'],
+  ['/img/books/leaders-foundation.jpg', "The Leader's Foundation",
+    'Where trust becomes the strongest strategy.', 'https://a.co/d/01gAEQjT'],
+  ['/img/books/leaders-direction.jpg', "The Leader's Direction",
+    'Finding clarity in who you are and where you\u2019re called to go.', 'https://a.co/d/00bO2w6y'],
+  ['/img/books/three-paths.jpg', 'Three Paths Out of Paradise',
+    'The first book in a trilogy on longing, identity, and the questions that define a life.', 'https://a.co/d/0i8YWort'],
+  ['/img/books/known-called.jpg', 'Known and Called',
+    'The four questions that define your life — the framework at the heart of our leadership work.', 'https://a.co/d/059iI9JE'],
+  ['/img/books/heart-well-kept.jpg', 'A Heart Well Kept',
+    'Building relationships that flourish, rooted in five pillars: peace, patience, process, purpose, and permission.', 'https://a.co/d/0c1ytRgC'],
+  ['/img/books/word-worshipping.jpg', 'When the Word Comes Worshipping',
+    'A reflection on Scripture, worship, and the formed life.', 'https://a.co/d/04Fu8ley'],
+  ['/img/books/leading-through-conflict.jpg', 'Leading Through Conflict',
+    'The practice of heart-first leadership, by John D. Erickson and Dennis R. Humphrey — a model for moving teams through conflict rather than around it.', 'https://a.co/d/0j5j0MQ8'],
+]
+
+function Books() {
   return (
-    <div className="page wrap">
-      <p className="eyebrow">The books</p>
-      <h1 style={{ marginTop: 18 }}>We write what we <em>practice</em>.</h1>
-      <p className="lede">Every framework in these books was forged in real advising rooms with real leaders. Start anywhere; they all lead to the same place — a healthier heart and a healthier company.</p>
-      <div className="cover-grid">
-        <img src="/img/books/leaders-motivation.jpg" alt="The Leader's Motivation cover" loading="lazy" />
-        <img src="/img/books/leaders-foundation.jpg" alt="The Leader's Foundation cover" loading="lazy" />
-        <img src="/img/books/leaders-direction.jpg" alt="The Leader's Direction cover" loading="lazy" />
-        <img src="/img/books/three-paths.jpg" alt="Three Paths Out of Paradise cover" loading="lazy" />
-        <img src="/img/books/known-called.jpg" alt="Known and Called cover" loading="lazy" />
-        <img src="/img/books/heart-well-kept.jpg" alt="A Heart Well Kept cover" loading="lazy" />
-        <img src="/img/books/leading-through-conflict.jpg" alt="Leading Through Conflict cover" loading="lazy" />
-      </div>
-      <h2>The leadership trilogy</h2>
-      <p><strong>The Leader's Motivation.</strong> Awakening the inner forces that shape how you lead. Discover the root motivations beneath your decisions — and learn to lead from a settled heart.</p>
-      <p><strong>The Leader's Foundation.</strong> Where trust becomes the strongest strategy.</p>
-      <p><strong>The Leader's Direction.</strong> Finding clarity in who you are and where you're called to go.</p>
-      <h2>The heart series</h2>
-      <p><strong>Three Paths Out of Paradise.</strong> You will either flounder or flourish in every relationship, depending on how well you know your own heart. The book that started it all.</p>
-      <p><strong>Known and Called.</strong> Four questions every leader must answer: Who am I? Why am I here? Where am I going? Who loves me?</p>
-      <p><strong>A Heart Well Kept.</strong> Five pillars — Peace, Patience, Process, Purpose, Permission — for anyone who walks alongside another person and wants to do it well.</p>
-      <h2>With Dennis</h2>
-      <p><strong>Leading Through Conflict.</strong> The practice of heart-first leadership. By John D. Erickson and Dennis R. Humphrey — a practical model for moving through conflict rather than around it, the same model we teach at the doctoral level.</p>
-      <h2>Forthcoming</h2>
-      <p><strong>Walking Alongside.</strong> The story of one mentoring relationship, and a guide for anyone called to walk with the next generation.</p>
-    </div>
+    <main>
+      <section className="page-hero">
+        <div className="wrap">
+          <span className="kicker">The books</span>
+          <h1>We write what we <em>practice.</em></h1>
+          <p className="lede">
+            Every framework we bring to a company was forged in real advising rooms with real
+            leaders. Tap any cover to find it on Amazon.
+          </p>
+        </div>
+      </section>
+      <section className="prose">
+        <div className="wrap">
+          <div className="book-list">
+            {BOOKS.map(([cover, t, d, url]) => (
+              <a className="book-row" href={url} target="_blank" rel="noopener noreferrer" key={t}>
+                <img src={cover} alt={`${t} cover`} loading="lazy" />
+                <div>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                  <span className="amz">View on Amazon →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+          <p className="note" style={{ marginTop: 40 }}><b>Walking Alongside</b> — forthcoming, 2026.</p>
+        </div>
+      </section>
+    </main>
   )
 }
