@@ -6,11 +6,11 @@ const BOOKS = [
   ["The Leader's Motivation", '/img/books/leaders-motivation.jpg', 'https://a.co/d/04Xwfn5a'],
   ["The Leader's Foundation", '/img/books/leaders-foundation.jpg', 'https://a.co/d/01gAEQjT'],
   ["The Leader's Direction", '/img/books/leaders-direction.jpg', 'https://a.co/d/00bO2w6y'],
+  ['Leading Through Conflict', '/img/books/leading-through-conflict.jpg', 'https://a.co/d/0j5j0MQ8'],
   ['Three Paths Out of Paradise', '/img/books/three-paths.jpg', 'https://a.co/d/0i8YWort'],
   ['Known and Called', '/img/books/known-called.jpg', 'https://a.co/d/059iI9JE'],
   ['A Heart Well Kept', '/img/books/heart-well-kept.jpg', 'https://a.co/d/0c1ytRgC'],
   ['When the Word Comes Worshipping', '/img/books/word-worshipping.jpg', 'https://a.co/d/04Fu8ley'],
-  ['Leading Through Conflict', '/img/books/leading-through-conflict.jpg', 'https://a.co/d/0j5j0MQ8'],
 ]
 
 const PILLARS = [

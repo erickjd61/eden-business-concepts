@@ -5,6 +5,8 @@ export function SiteNav() {
     <nav className="site-nav">
       <div className="wrap nav-in">
         <Link to="/" className="logo" aria-label="Eden Business Concepts home">
+          {/* nav mark; swap to /nav-mark-tree.png to compare the tree treatment */}
+          <img src="/nav-mark-circle.png" alt="" aria-hidden="true" />
           <span className="e">Eden</span>
           <span className="r">Business Concepts</span>
         </Link>

@@ -21,6 +21,16 @@ export const Route = createRootRoute({
         content:
           'Eden Business Concepts brings a heart-focused approach to the two hardest problems in business: scaling the company you have built and growing the leadership strength to carry it. Comprehensive business scaling, leadership formation, and conflict transformation since 1991.',
       },
+      { property: 'og:title', content: 'Eden Business Concepts' },
+      {
+        property: 'og:description',
+        content:
+          'A heart-focused approach to scaling the company you have built and growing the leadership strength to carry it.',
+      },
+      { property: 'og:image', content: '/og-image.png' },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: '/og-image.png' },
     ],
     links: [
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -30,6 +40,9 @@ export const Route = createRootRoute({
         href: 'https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Space+Mono:wght@400;700&display=swap',
       },
       { rel: 'stylesheet', href: appCss },
+      { rel: 'icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icon-32.png' },
+      { rel: 'apple-touch-icon', href: '/icon-180.png' },
     ],
   }),
   shellComponent: RootDocument,

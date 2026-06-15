@@ -9,6 +9,8 @@ const BOOKS = [
     'Where trust becomes the strongest strategy.', 'https://a.co/d/01gAEQjT'],
   ['/img/books/leaders-direction.jpg', "The Leader's Direction",
     'Finding clarity in who you are and where you\u2019re called to go.', 'https://a.co/d/00bO2w6y'],
+  ['/img/books/leading-through-conflict.jpg', 'Leading Through Conflict',
+    'The practice of heart-first leadership, by John D. Erickson and Dennis R. Humphrey — a model for moving teams through conflict rather than around it.', 'https://a.co/d/0j5j0MQ8'],
   ['/img/books/three-paths.jpg', 'Three Paths Out of Paradise',
     'The first book in a trilogy on longing, identity, and the questions that define a life.', 'https://a.co/d/0i8YWort'],
   ['/img/books/known-called.jpg', 'Known and Called',
@@ -17,8 +19,6 @@ const BOOKS = [
     'Building relationships that flourish, rooted in five pillars: peace, patience, process, purpose, and permission.', 'https://a.co/d/0c1ytRgC'],
   ['/img/books/word-worshipping.jpg', 'When the Word Comes Worshipping',
     'A reflection on Scripture, worship, and the formed life.', 'https://a.co/d/04Fu8ley'],
-  ['/img/books/leading-through-conflict.jpg', 'Leading Through Conflict',
-    'The practice of heart-first leadership, by John D. Erickson and Dennis R. Humphrey — a model for moving teams through conflict rather than around it.', 'https://a.co/d/0j5j0MQ8'],
 ]
 
 function Books() {
