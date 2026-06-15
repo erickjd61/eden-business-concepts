@@ -7,9 +7,9 @@ categories: ["Culture", "Retention", "Thrive"]
 excerpt: ""
 ---
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/Thrive-Space-Blog.png)
+![](/img/insights/2021-06-Thrive-Space-Blog.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/11/Charlie-Warzel-Quote-1.png)
+![](/img/insights/2021-11-Charlie-Warzel-Quote-1.png)
 One of the first questions I ask a company owner or leader is: “Do the people you lead love to work for you?” The next question I ask is: “Why would anyone want to work at your company?” **Answers vary:**
 
   *     * “I don’t need them to love me – I pay them a lot of money to do what I tell them to do.”
@@ -47,13 +47,13 @@ So how can organizations distinguish between enthusiastic and reluctant stayers?
   * Employee relationships
   * Intangibles that make it hard to leave
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/11/Job-Embeddedness.png)
+![](/img/insights/2021-11-Job-Embeddedness.png)
  That’s what senior leaders face, so that’s what we talk about in our podcast and our workshop this month.  Let us know if we can work with you to address any of these realities in your company.
 
 And, if you missed our (https://anchor.fm/thrivespace/episodes/Episode-7-The-Perfect-Storm-Weathering-The-Great-Resignation-by-Cultivating-Enthusiastic-Stayers-e19r073) discussing the Great Resignation, you can check it out here:
 
 To Your Health!
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/John-Signature-1.png)
+![](/img/insights/2021-06-John-Signature-1.png)
 
 ### **Resources for this topic:**
 

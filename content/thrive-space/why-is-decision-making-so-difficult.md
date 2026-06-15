@@ -7,9 +7,9 @@ categories: ["Decision Making", "Thrive"]
 excerpt: ""
 ---
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/Thrive-Space-Blog.png)
+![](/img/insights/2021-06-Thrive-Space-Blog.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/10/Cheryl-Strauss-Einhorn-Quote.png)
+![](/img/insights/2022-10-Cheryl-Strauss-Einhorn-Quote.png)
 
 > “When we’re faced with difficult and complex decisions, we typically experience difficult and complex emotions. Many of us don’t want to sit with these uncomfortable feelings, so we try to get the decision-making over with. But this often leads to poor decisions. We may not truly solve the problem at hand, and we often end up feeling worse. It’s an unproductive feedback loop that bookends our decisions with negative feelings. These emotional bookends, however, can be your secret weapon in making better decisions. The process is as simple as taking the time to identify 1) the emotions you feel as you face your decision, and 2) the emotions you want to feel as you’re looking at your decision in the rearview mirror. What do you see? How is your life better for a satisfying decision outcome?”  \- Cheryl Strauss Einhorn
 
@@ -29,7 +29,7 @@ When considering a decision, the mind gives disproportionate weight to the first
   * Be careful to avoid anchoring your advisers, consultants, and others from whom you solicit information and counsel. Tell them as little as possible about your own ideas, estimates, and tentative decisions.
   * Be particularly wary of anchors in negotiations. Think through your position before any negotiation begins to avoid being anchored by the other party’s initial proposal.
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/10/The-6-Hidden-Traps-in-Decision-Making.png)
+![](/img/insights/2022-10-The-6-Hidden-Traps-in-Decision-Making.png)
 
 ### **The Status Quo Trap**
 
@@ -79,12 +79,12 @@ In the face of uncertainty, the best way to avoid estimating and forecasting tra
 
 Dennis and I like to see ourselves as the Harbor Pilots for your leadership. We can help steer you around the traps, avoid the issues that will damage you or others, and move your company to thrive.
 
-#### We can help you navigate your (https://edenbusinessconcepts.com/strategic-advising/#decision-making) – (https://edenbusinessconcepts.com/contact/) for a conversation.
+#### We can help you navigate your (/advising) – (/contact) for a conversation.
 
 If you haven’t had a chance to listen to our latest podcast, you can check it out here:
 
 For the Heart of Your Business!
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/John-Signature-1.png)
+![](/img/insights/2021-06-John-Signature-1.png)
 
 ### **Resources for this topic:**
 

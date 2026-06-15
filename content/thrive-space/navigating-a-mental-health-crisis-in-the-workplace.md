@@ -7,10 +7,10 @@ categories: ["Crisis", "Mental Health", "Thrive"]
 excerpt: ""
 ---
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/Thrive-Space-Blog.png)
+![](/img/insights/2021-06-Thrive-Space-Blog.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/08/082422-Thrive-Space-Blog-Post-Quote.png)
-A recent report by [One Mind at Work](https://onemindatwork.org/), _Trauma and Mental Health in the Workplace_ , concludes that: “An overwhelming 80% of employers . . . report that their “most consequential” action during the pandemic has been to consider the physical safety and emotional health of employees in response to the crisis. More than ever, the pandemic has provided a space for employers to make active and intentional efforts to show they care, and that the (https://edenbusinessconcepts.com/team-optimization/#people-leadership-development-teams) can be a place of healing and positivity.”
+![](/img/insights/2022-08-082422-Thrive-Space-Blog-Post-Quote.png)
+A recent report by [One Mind at Work](https://onemindatwork.org/), _Trauma and Mental Health in the Workplace_ , concludes that: “An overwhelming 80% of employers . . . report that their “most consequential” action during the pandemic has been to consider the physical safety and emotional health of employees in response to the crisis. More than ever, the pandemic has provided a space for employers to make active and intentional efforts to show they care, and that the (/leadership) can be a place of healing and positivity.”
 
 ## **One of the most important roles for leaders of companies and organizations is to create a “SAFE” environment for their workforce:**
 
@@ -19,7 +19,7 @@ A recent report by [One Mind at Work](https://onemindatwork.org/), _Trauma and M
   * **F** ree – not coerced; given opportunities to learn, change, grow, speak, fail, and recover
   * **E** mpowered – not controlled; able to decide and act
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/08/082422-Thrive-Space-Blog-SAFE.png)
+![](/img/insights/2022-08-082422-Thrive-Space-Blog-SAFE.png)
 The mental health team at [Spring Health](https://springhealth.com/) provides insight into how we respond to a mental health crisis to maintain a safe workplace. The following ideas are adapted from one of their blogs. ______________________ You walk into your office one morning to discover a coworker at his desk, sobbing hysterically. He hurls paper clips at anyone who comes near him. This is not only an atypical morning: you’re witnessing a mental health crisis in the workplace. As a leader, you need to take steps to handle the situation compassionately and professionally.
 
 ### What is a mental health crisis?
@@ -42,12 +42,12 @@ The first step is to assure the suffering employee that help is on the way. If t
   2. Call for emergency help, such as 911, as soon as possible.
   3. Indicate the nature of the emergency, and describe the employee’s behavior in detail.
 
-If they are not an immediate danger to you or others, start speaking to them with compassion. Don’t chastise or alienate the employee by arguing with them or telling them to “snap out of it.” Instead, express sympathy and understanding. Ask them non-judgmental questions: how long have they been feeling this way? Have they had any thoughts about suicide? Take the time to listen to their responses genuinely. If the employee indicates that they have been contemplating suicide, this qualifies as a medical emergency: you need to call for professional help immediately. However, if they are not suicidal, calling a therapist who they have been working with (or a psychiatrist recommended by your health provider) is the next step. The mental health professional can recommend specific actions based on the person’s behavior. In some cases, they may suggest that the employee immediately goes to the hospital for treatment. In other situations, they may schedule a future appointment. In all cases, stay close to the employee until a clear course of action emerges. _____________________________ **Supporting your organization with personalized mental healthcare, like Spring Health, is one of the best ways to navigate a crisis, reduce burnout and stress, and improve employee wellbeing.** Our webinar this month provides an understanding of trauma, how it affects your workforce, and how you can build a trauma-informed, “safe” workplace. You can access the recording and (https://go.edenbusinessconcepts.com/hubfs/Trauma-Informed%20Workplace%20.pptx) on our website under the [Resources tab](https://edenbusinessconcepts.com/resource-library/).
+If they are not an immediate danger to you or others, start speaking to them with compassion. Don’t chastise or alienate the employee by arguing with them or telling them to “snap out of it.” Instead, express sympathy and understanding. Ask them non-judgmental questions: how long have they been feeling this way? Have they had any thoughts about suicide? Take the time to listen to their responses genuinely. If the employee indicates that they have been contemplating suicide, this qualifies as a medical emergency: you need to call for professional help immediately. However, if they are not suicidal, calling a therapist who they have been working with (or a psychiatrist recommended by your health provider) is the next step. The mental health professional can recommend specific actions based on the person’s behavior. In some cases, they may suggest that the employee immediately goes to the hospital for treatment. In other situations, they may schedule a future appointment. In all cases, stay close to the employee until a clear course of action emerges. _____________________________ **Supporting your organization with personalized mental healthcare, like Spring Health, is one of the best ways to navigate a crisis, reduce burnout and stress, and improve employee wellbeing.** Our webinar this month provides an understanding of trauma, how it affects your workforce, and how you can build a trauma-informed, “safe” workplace. You can access the recording and (https://go.edenbusinessconcepts.com/hubfs/Trauma-Informed%20Workplace%20.pptx) on our website under the [Resources tab](/insights).
 
 If you haven’t had a chance to listen to our latest podcast, you can check it out here:
 
 For the Heart of Your Business!
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/John-Signature-1.png)
+![](/img/insights/2021-06-John-Signature-1.png)
 
 ### **Resources for this topic:**
 

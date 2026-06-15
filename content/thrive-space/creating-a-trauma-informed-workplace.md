@@ -7,9 +7,9 @@ categories: ["Mental Health", "Thrive", "Trauma"]
 excerpt: ""
 ---
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/Thrive-Space-Blog.png)
+![](/img/insights/2021-06-Thrive-Space-Blog.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/07/072722-Thrive-Space-Blog-Image-1.png)
+![](/img/insights/2022-07-072722-Thrive-Space-Blog-Image-1.png)
 As business leaders, we have a continuing priority to care well for our people. We must not separate the success of our company in fulfilling its mission and outcomes from the primary value of our people and their success and well-being. This challenge has become more intense during the last two years and in the current environment in our nation. Our employees are dealing with pressure from their relationships, finances, job and life uncertainty, as well as the amount of violence, divisiveness, and danger they sense from the influx of media.  In a recent (https://hbr.org/2022/03/we-need-trauma-informed-workplaces), Katharine Manning addresses the turbulence our people are feeling as an inevitable response to continual crisis: trauma.
 
 ### “The past two years have been incredibly turbulent, as we’ve faced Covid, racial violence, political upheaval, environmental disasters, war, and more. Anxiety and depression have (https://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/). Organizations have had to confront issues they never expected and find new ways to support their employees through repeated traumatic experiences.
@@ -32,13 +32,13 @@ There are many strategies for implementing trauma-informed approaches into an or
   3. **Response:** Organization begins to implement changes that affect culture, routines, and human resource processes to eliminate triggers.
   4. **Informed:** Organization begins to implement trauma- informed practices and monitoring the impacts of changes made to policies and practices."
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/07/072722-Post-Quote-1.png)
+![](/img/insights/2022-07-072722-Post-Quote-1.png)
 Manning also encourages us to understand the effect of our response as leaders: “The way organizations support people during periods of trauma is uniquely powerful, and the ramifications are long-lasting. This is because in times of trauma, the twin concepts of institutional betrayal and psychological safety come into play. When we are in a period of crisis, many of us look to our institutions to support and protect us. If they fail to do so, or if they take steps that we fear will harm us or those we care about, that can create a second injury, called an institutional betrayal. It can arise due to deliberate actions that harm, as well as from (https://psycnet.apa.org/record/2014-36500-001) when action is expected. **These actions or inactions can exacerbate already-difficult circumstances.** The flip side of institutional betrayal is psychological safety: the sense that within a team or organization, it is acceptable for someone to admit that they made a mistake, or don’t know the answer, or are struggling. The fastest way to build psychological safety was for team members to support each other through hard times. As Charles Duhigg at The New York Times Magazine put it: “To feel ‘psychologically safe,’ we must know that we can be free enough, sometimes, to share the things that scare us without fear of recriminations. We must be able to talk about what is messy or sad, and to have hard conversations with colleagues who are driving us crazy. We can’t be focused just on efficiency. Thus, if we fail to respond appropriately in our work with those experiencing trauma, we can add a second injury to the first. But if we respond well, we build trust and connection. **Either way,****_the manner in which we support each other in times of crisis will reverberate in our organizations for many years to come_**.” On August 16th, we are holding a (https://go.edenbusinessconcepts.com/workshop-building-a-trauma-informed-workplace). We will provide practical ways you can address this critical need for your people.  We are also available to engage you and your co-leaders to bring this response to your company. Let us know how we can support you.
 
 If you haven’t had a chance to listen to our latest podcast, you can check it out here:
 
 For the Heart of Your Business!
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/John-Signature-1.png)
+![](/img/insights/2021-06-John-Signature-1.png)
 
 ### **Resources for this topic:**
 

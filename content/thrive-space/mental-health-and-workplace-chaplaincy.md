@@ -7,9 +7,9 @@ categories: ["Mental Health", "Thrive"]
 excerpt: ""
 ---
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/Thrive-Space-Blog.png)
+![](/img/insights/2021-06-Thrive-Space-Blog.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/06/I-am-here-to-listen.-.png)
+![](/img/insights/2022-06-I-am-here-to-listen.-.png)
 _Awareness | Listening | Compassion_ The foundation of human care.  _“I am here to listen.” | “I have no agenda.” | “My time is your time.”_ Conversations that connect. **Care and connection** are the lifelines we offer to those under stress, anxiety, loneliness, depression, and thoughts of suicide.  **Persistent presence** is a lifesaving gift to those suffering from pain, confusion, and disconnection. Two years into a pandemic, multiple national and local crises, inflation, and uncertainty – we feel tension, fatigue, weight, and trauma. So do most of the people who work around you and in your company. “Work-related concerns have left more than 40 percent of employees **feeling hopeless, burned out, or exhausted** as they grapple with their altered lives.”“Chronic **loneliness** and **stress** affect employees by decreasing:
 
   * Engagement
@@ -24,7 +24,7 @@ Even CEOs report feeling lonely. It is lonely at the top. Harvard Business Revie
 
 > “According to the National Institute of Mental Health, the leading cause of **absenteeism** in the United States is **depression**. Absenteeism costs US companies billions of dollars each year in lost productivity, wages, poor quality of goods/services and excess management time.”
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/06/Post-Quote.png)
+![](/img/insights/2022-06-Post-Quote.png)
 Your employees need your active, effective leadership to support their mental health and to respond to their unique needs. Many of your companies have become aware of the cost of mental health issues and have begun to provide Employee Assistance Programs, access to professional therapy, and creative employee benefits. Another proven solution we would encourage you to implement is a **Workplace Chaplaincy** program.  “Chaplains fit well in the multi-faceted arsenal of combating employees’ mental health issues. They are approachable, available, accessible, familiar, and front-line workers. They help lonely employees feel connected and cared for. They have personal discussions with employees, listening effectively and showing that they care and are available to help them walk through issues.”
 
 > “Chaplains develop personal relationships with the employees they serve by regular, non-interruptive worksite or virtual visits. Long before an employee may have a need, a relationship is established, and many times an employee will reach out for advice, help, or care before a problem turns into a crisis event.”
@@ -34,7 +34,7 @@ We encourage you, as a leader, to take a proactive approach to the mental health
 If you haven’t had a chance to listen to our latest podcast, you can check it out here:
 
 For the Heart of Your Business!
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/John-Signature-1.png)
+![](/img/insights/2021-06-John-Signature-1.png)
 
 ### **Resources for this topic:**
 

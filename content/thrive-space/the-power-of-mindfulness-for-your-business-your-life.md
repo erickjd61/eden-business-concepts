@@ -7,9 +7,9 @@ categories: ["Culture", "Mindfulness", "Thrive"]
 excerpt: ""
 ---
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/Thrive-Space-Blog.png)
+![](/img/insights/2021-06-Thrive-Space-Blog.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/01/Scott-Galloway-Quote.png)
+![](/img/insights/2022-01-Scott-Galloway-Quote.png)
 We begin a new year under a continuing shadow of uncertainty and challenges: pandemic variants, supply chain disruptions, finding, keeping, and paying employees, economic inflation, political and cultural divisions, and geopolitical tensions with China, Russia, and others. At the same time, we are a nation of resilient business leaders who continue to rise to these challenges with creativity and determination. Brian Kropp and Emily Rose McRae in HBR describe [_11 Trends that Will Shape Work in 2022 and Beyond_](https://hbr.org/2022/01/11-trends-that-will-shape-work-in-2022-and-beyond). One of them addresses the impact of employee wellness: **Wellness will become the newest metric that companies use to understand their employees**. “For years, executives have experimented with different metrics, such as employee satisfaction or engagement, to understand their employees. In 2022, organizations will add new measures that assess their mental, physical, and financial health. Many companies expanded the wellness support they provided to their employees in the wake of the pandemic. A Gartner 2020 survey of 52 HR executives found that:
 
   * 94% of companies made significant investments in their well-being programs
@@ -17,7 +17,7 @@ We begin a new year under a continuing shadow of uncertainty and challenges: pan
   * 50% increased support for physical well-being
   * 38% increased support for financial well-being
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/01/Employee-Support-Percentages.png)
+![](/img/insights/2022-01-Employee-Support-Percentages.png)
 These programs work for those that take advantage of them. Gartner’s analysis shows that employees who utilize these benefits report 23% higher levels of mental health, 17% higher levels of physical health, and are 23% more likely to say they sleep well at night. **These improvements in personal outcomes translate to higher levels of performance and retention.** However, there has been limited uptake of these programs by employees. Across the last 12 months, our data shows that less than 40% of employees have taken advantage of any well-being offering provided by their employer.” We can address that 60% by focusing on **the impact of _mindfulness_ as a mindset and practice that connects success to happiness and satisfaction at work.** [Dr. Irene Kraegel defines mindfulness as “nonjudgmental awareness of experience as it unfolds, moment by moment.”](https://www.themindfulchristian.com/) Through the practice of mindfulness, we exercise the “muscle” of our attention to focus intentionally on the only moment in which we have any control—right now.
 
 ## The goal of mindfulness is to cultivate compassion towards ourselves and others and accept the reality of each moment's experience with curiosity and openness.
@@ -27,7 +27,7 @@ These programs work for those that take advantage of them. Gartner’s analysis 
 > “When we can inform our success with well-being, it changes everything. We begin to see every aspect of our lives as a tapestry, with the thread of benefit interwoven. How do I benefit myself and others in every situation? With this being-of-benefit manifesto, success becomes more of a process than a goal.”
 
 The authors of a 2019 article, [**Mindful Leader Development,**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6529524/) point out that “some of the qualities that effective leaders must acquire include self-awareness and an ability to regulate and manage emotions, both their own and those of others, since leader behaviors tend to color the tone of the workplace. They maintain that it is important to acknowledge that the actions of leaders have a great impact on the job satisfaction and general well-being of those around them.” Another article, [**Mindfulness Can Help Unlock Your Company’s Collective Intelligence**](https://knowledge.wharton.upenn.edu/article/mindfulness-can-help-unlock-companys-collective-intelligence/), shows “that even short mindfulness breaks—as little as 7 or 8 minutes at a time—increase empathy and the ability to put oneself in one’s co-worker’s shoes. This contributes to collective intelligence, and collective intelligence contributes to a positive and effective work environment.” “By increasing self-awareness and empathy, mindfulness impacts two areas that directly promote collective intelligence”: **“Communication and Prosocial Behavior:** Team members who**** embrace mindfulness are better listeners and can react in an emotionally intelligent way when tension or disagreement arises. Their style of interaction encourages other team members to speak up and participate in creative processes and allows them to integrate their diverse cognitive styles.” **“Leadership:** Mindfulness training helps leaders improve their ability to self-reflect. Mindfulness is also associated with important leadership capacities such as flexibility, authenticity, and humbleness.” Please visit the [American Mindfulness Research Association](https://goamra.org/) for more information regarding the extensive and growing body of research concerning mindfulness. Let us know if we can work with you to address any of these realities in your company.   Check out our most recent podcast on this topic as well: Your Health!
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/John-Signature-1.png)
+![](/img/insights/2021-06-John-Signature-1.png)
 
 ### **Resources for this topic:**
 

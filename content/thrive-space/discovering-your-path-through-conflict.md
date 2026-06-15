@@ -7,15 +7,15 @@ categories: ["Conflict", "Thrive"]
 excerpt: ""
 ---
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/Thrive-Space-Blog.png)
+![](/img/insights/2021-06-Thrive-Space-Blog.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/03/Discovering-Your-Path-Through-Conflict-Dorothy-Thompson-Quote.png)
+![](/img/insights/2022-03-Discovering-Your-Path-Through-Conflict-Dorothy-Thompson-Quote.png)
 We live in a world of conflict. At this moment, that is obvious on a global scale. Nations are now in open conflict, coming on the heels of two years of pandemic-induced disharmony with its mandated social distancing, masking, and vaccinating – and its losses.  The conflicts we are watching, global, national, societal, are the product of the disunity and destruction of relationships at a much smaller scale. Our recovery from these conflicts, along with the restoration of our relationships, will result from choices we make as individuals to reunite.**Nearly every conversation has the potential to become a tense encounter or a clash of opinions and emotions. Our kitchens and bedrooms, classrooms and offices, churches and organizations, stores and restaurants, planes, trains, and automobiles become potential battlefields of painful, damaging interactions. Conflict seems inevitable; escape feels impossible, for even in isolation, we are still in conflict with ourselves and with our Creator.**Yet, hope did not die. Longing for Eden is not futile. The inevitable conflict that bursts out of colliding hearts can be directed away from violence, destruction, and death. That energy can be channeled toward the reconciliation, restoration, and intimacy we long for into relationships we were created to enjoy.  I am now writing a second book in the Longing for Eden series, a set of four books that provides a way to understand how our hearts work, so our lives can flourish rather than flounder in our relationships and our leadership. The first book focused on a paradigm for understanding our fundamental motivations and how we respond to pain and emotional challenges. That paradigm will come to play in this discussion on conflict as one of the steps for moving successfully through the process by dropping our entitlements to respect, value, or approval.
 
 ### Our desire here is to discover a path through conflict that restores and sustains healthy relationships.  _We can learn how to move through conflict in a way that draws us toward each other. We can understand and take advantage of the conflict to move forward rather than stagnate, to move from a sense of futility to living together in joy._
 
 As we begin exploring the roots of conflict and see how to transform them into an environment for restoration, we need to be aware of four core longings that shape our perspective. These questions raise the deepest issues of what really matters to us, and they form the path of our lives as we search for answers.
-![](https://edenbusinessconcepts.com/wp-content/uploads/2022/03/Discovering-Your-Path-Through-Conflict-Blog-Quote-1.png)
+![](/img/insights/2022-03-Discovering-Your-Path-Through-Conflict-Blog-Quote-1.png)
 **At the center of our being, we yearn for a clear sense of identity, purpose, direction, and intimacy.**
 
   * Who am I?
@@ -36,7 +36,7 @@ In our podcast and webinar this month, we explore each of those skills, demonstr
 If you haven’t had a chance to listen to our recent podcast on this topic, you can check it out here:
 
 To Your Health!
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/John-Signature-1.png)
+![](/img/insights/2021-06-John-Signature-1.png)
 
 ### **Resources for this topic:**
 

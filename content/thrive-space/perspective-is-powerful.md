@@ -7,11 +7,11 @@ categories: ["Culture", "Retention", "Thrive"]
 excerpt: ""
 ---
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/Thrive-Space-Blog.png)
+![](/img/insights/2021-06-Thrive-Space-Blog.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/12/121521-Thrive-Space-Blog-Images-1-1.png)
+![](/img/insights/2021-12-121521-Thrive-Space-Blog-Images-1-1.png)
 
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/12/121521-Thrive-Space-Blog-Images-1.png)
+![](/img/insights/2021-12-121521-Thrive-Space-Blog-Images-1.png)
 
 ### Perspective is powerful. It shapes our perception of reality. As a leader, it shapes the reality of everyone around you.
 
@@ -27,7 +27,7 @@ As we talk about in our podcast this month, where we reflect on the encouragemen
      4. **Reach** out to your community. Allow the people in your life to care for you. Choose to walk together rather than alone through your decisions and responses to life.
 
 **As a leader, your company, employees, colleagues, family, and friends will reflect your perspective in their own lives and work. Lift their eyes to see a vision of their future that is thriving.** Let us know if we can work with you to address any of these realities in your company. And, if you missed it, check out our latest blog post as we reflect on this year.To Your Health!
-![](https://edenbusinessconcepts.com/wp-content/uploads/2021/06/John-Signature-1.png)
+![](/img/insights/2021-06-John-Signature-1.png)
 
 ### **Resources for this topic:**
 
