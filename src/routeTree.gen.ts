@@ -15,9 +15,12 @@ import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ConflictRouteImport } from './routes/conflict'
 import { Route as BooksRouteImport } from './routes/books'
+import { Route as ArchiveRouteImport } from './routes/archive'
 import { Route as AdvisingRouteImport } from './routes/advising'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as InsightsIndexRouteImport } from './routes/insights.index'
+import { Route as InsightsSlugRouteImport } from './routes/insights.$slug'
 
 const ThriveSpaceRoute = ThriveSpaceRouteImport.update({
   id: '/thrive-space',
@@ -49,6 +52,11 @@ const BooksRoute = BooksRouteImport.update({
   path: '/books',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArchiveRoute = ArchiveRouteImport.update({
+  id: '/archive',
+  path: '/archive',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdvisingRoute = AdvisingRouteImport.update({
   id: '/advising',
   path: '/advising',
@@ -64,40 +72,59 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InsightsIndexRoute = InsightsIndexRouteImport.update({
+  id: '/insights/',
+  path: '/insights/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsSlugRoute = InsightsSlugRouteImport.update({
+  id: '/insights/$slug',
+  path: '/insights/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/advising': typeof AdvisingRoute
+  '/archive': typeof ArchiveRoute
   '/books': typeof BooksRoute
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
   '/scaling': typeof ScalingRoute
   '/thrive-space': typeof ThriveSpaceRoute
+  '/insights/$slug': typeof InsightsSlugRoute
+  '/insights/': typeof InsightsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/advising': typeof AdvisingRoute
+  '/archive': typeof ArchiveRoute
   '/books': typeof BooksRoute
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
   '/scaling': typeof ScalingRoute
   '/thrive-space': typeof ThriveSpaceRoute
+  '/insights/$slug': typeof InsightsSlugRoute
+  '/insights': typeof InsightsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/advising': typeof AdvisingRoute
+  '/archive': typeof ArchiveRoute
   '/books': typeof BooksRoute
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
   '/scaling': typeof ScalingRoute
   '/thrive-space': typeof ThriveSpaceRoute
+  '/insights/$slug': typeof InsightsSlugRoute
+  '/insights/': typeof InsightsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -105,46 +132,58 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/advising'
+    | '/archive'
     | '/books'
     | '/conflict'
     | '/contact'
     | '/leadership'
     | '/scaling'
     | '/thrive-space'
+    | '/insights/$slug'
+    | '/insights/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/advising'
+    | '/archive'
     | '/books'
     | '/conflict'
     | '/contact'
     | '/leadership'
     | '/scaling'
     | '/thrive-space'
+    | '/insights/$slug'
+    | '/insights'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/advising'
+    | '/archive'
     | '/books'
     | '/conflict'
     | '/contact'
     | '/leadership'
     | '/scaling'
     | '/thrive-space'
+    | '/insights/$slug'
+    | '/insights/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AdvisingRoute: typeof AdvisingRoute
+  ArchiveRoute: typeof ArchiveRoute
   BooksRoute: typeof BooksRoute
   ConflictRoute: typeof ConflictRoute
   ContactRoute: typeof ContactRoute
   LeadershipRoute: typeof LeadershipRoute
   ScalingRoute: typeof ScalingRoute
   ThriveSpaceRoute: typeof ThriveSpaceRoute
+  InsightsSlugRoute: typeof InsightsSlugRoute
+  InsightsIndexRoute: typeof InsightsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -191,6 +230,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BooksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/archive': {
+      id: '/archive'
+      path: '/archive'
+      fullPath: '/archive'
+      preLoaderRoute: typeof ArchiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/advising': {
       id: '/advising'
       path: '/advising'
@@ -212,6 +258,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/insights/': {
+      id: '/insights/'
+      path: '/insights'
+      fullPath: '/insights/'
+      preLoaderRoute: typeof InsightsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights/$slug': {
+      id: '/insights/$slug'
+      path: '/insights/$slug'
+      fullPath: '/insights/$slug'
+      preLoaderRoute: typeof InsightsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -219,12 +279,15 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AdvisingRoute: AdvisingRoute,
+  ArchiveRoute: ArchiveRoute,
   BooksRoute: BooksRoute,
   ConflictRoute: ConflictRoute,
   ContactRoute: ContactRoute,
   LeadershipRoute: LeadershipRoute,
   ScalingRoute: ScalingRoute,
   ThriveSpaceRoute: ThriveSpaceRoute,
+  InsightsSlugRoute: InsightsSlugRoute,
+  InsightsIndexRoute: InsightsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

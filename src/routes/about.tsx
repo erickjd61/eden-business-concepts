@@ -32,24 +32,36 @@ function About() {
             the judgment of people who have done the work themselves.
           </p>
 
-          <h2>John D. Erickson, DMin</h2>
-          <p>
-            <b>Systems · Scaling · Strategy.</b> A Purdue-trained engineer whose career carried him
-            through the Navy and the State Department before three decades in leadership
-            development. John builds the operating systems, leads the scaling work, chairs peer
-            advisory forums for owners and CEOs, and serves as doctoral faculty at Trinity. He is
-            the author of multiple books on leadership and growth. He and his wife, Debbie, married
-            in 1982; they have two grown children and three grandchildren.
-          </p>
+          <div className="about-bio">
+            <img className="about-headshot" src="/img/people/john.jpg" alt="John D. Erickson" loading="lazy" />
+            <div>
+              <h2 style={{ marginTop: 0 }}>John D. Erickson, DMin</h2>
+              <p>
+                <b>Systems · Scaling · Strategy.</b> A Purdue-trained engineer whose career carried him
+                through the Navy and the State Department before three decades in leadership
+                development. John builds the operating systems, leads the scaling work, chairs peer
+                advisory forums for owners and CEOs, and serves as doctoral faculty at Trinity. He is
+                the author of multiple books on leadership and growth. He and his wife, Debbie, married
+                in 1982; they have two grown children and three grandchildren.
+              </p>
+              <a className="pr-li" href="https://www.linkedin.com/in/john-d-erickson/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+          </div>
 
-          <h2>Dennis R. Humphrey, PhD</h2>
-          <p>
-            <b>Formation · Conflict · Depth.</b> A licensed clinical counselor with thirty years
-            across consulting, higher education, and behavioral health. Dennis forms leaders,
-            restores teams, and guides his own peer advisory forums, bringing a clinician's
-            understanding of what actually moves people. He has been married for thirty-six years
-            and has four grown children and two grandchildren.
-          </p>
+          <div className="about-bio">
+            <img className="about-headshot" src="/img/people/dennis.jpg" alt="Dennis R. Humphrey" loading="lazy" />
+            <div>
+              <h2 style={{ marginTop: 0 }}>Dennis R. Humphrey, PhD</h2>
+              <p>
+                <b>Formation · Conflict · Depth.</b> A licensed clinical counselor with thirty years
+                across consulting, higher education, and behavioral health. Dennis forms leaders,
+                restores teams, and guides his own peer advisory forums, bringing a clinician's
+                understanding of what actually moves people. He has been married for thirty-six years
+                and has four grown children and two grandchildren.
+              </p>
+              <a className="pr-li" href="https://www.linkedin.com/in/dennishumphrey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+          </div>
 
           <p className="note">
             Together they co-author and co-teach, including <b>Leading Through Conflict</b> and

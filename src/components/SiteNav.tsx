@@ -15,6 +15,7 @@ export function SiteNav() {
           <Link to="/leadership">Leadership</Link>
           <Link to="/advising">Advising</Link>
           <Link to="/books">Books</Link>
+          <Link to="/insights">Insights</Link>
           <Link to="/about">About</Link>
           <Link to="/contact" className="btn btn-gold cta">Let's talk</Link>
         </div>

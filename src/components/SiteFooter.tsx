@@ -10,7 +10,9 @@ export function SiteFooter() {
           <Link to="/scaling">Scaling</Link>
           <Link to="/leadership">Leadership</Link>
           <Link to="/books">Books</Link>
+          <Link to="/insights">Insights</Link>
           <Link to="/about">About</Link>
+          <Link to="/archive">Archive</Link>
           <a href="https://www.linkedin.com/company/eden-business-concepts-llc/">LinkedIn</a>
         </div>
       </div>
