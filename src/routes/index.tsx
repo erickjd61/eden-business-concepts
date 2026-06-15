@@ -211,8 +211,21 @@ function Home() {
             "John knows how to cut to the heart of an issue — and he wields that skill to see
             others grow into <span>effective and compassionate leaders</span>."
           </blockquote>
-          <cite><b>David Ballard</b> · Attorney, Legal Aid of Western Michigan
-            <span className="ph">Placeholder · client testimonials to follow</span></cite>
+          <cite><b>David Ballard</b> · Attorney, Legal Aid of Western Michigan</cite>
+          <div className="testi-grid">
+            <figure className="testi">
+              <blockquote>"Perhaps most encouraging was how surprisingly well he described my heart, as well as that of my wife — it helped me along the path to more open, honest, and grateful relationships."</blockquote>
+              <figcaption><b>Bob Shockey</b>Westrock-MPS · Lansing, MI</figcaption>
+            </figure>
+            <figure className="testi">
+              <blockquote>"I am proud to count John Erickson as a mentor and friend… his wisdom and compassion have been a beacon for me throughout the last decade."</blockquote>
+              <figcaption><b>Shaun Clarke, PhD</b>Nuclear Engineering Faculty · University of Michigan</figcaption>
+            </figure>
+            <figure className="testi">
+              <blockquote>"I trust Dennis immeasurably. There is power in his ability to listen and discern the root issues behind actions and feelings."</blockquote>
+              <figcaption><b>Jason Mead</b>Teacher and Varsity Coach · Aurora, IL</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 

@@ -32,6 +32,15 @@ function About() {
             the judgment of people who have done the work themselves.
           </p>
 
+          <h2>What drives us</h2>
+          <p>
+            We exist to see an ongoing flow of cross-generation leaders who create life-giving
+            workplaces — through an awareness of their own hearts, and the hearts of the people they
+            lead. We believe you will either flounder or flourish based on how well you know your own
+            heart: <b>who you are, what drives you, why you make the decisions you do, and why you
+            respond to people and situations the way you do.</b>
+          </p>
+
           <div className="about-bio">
             <img className="about-headshot" src="/img/people/john.jpg" alt="John D. Erickson" loading="lazy" />
             <div>
