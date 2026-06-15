@@ -185,6 +185,7 @@ function Home() {
                 <div className="role">Systems · Scaling · Strategy</div>
                 <p>A Purdue engineer who became a leadership advisor. Builds the operating systems,
                   leads the scaling work, and chairs peer advisory forums for owners and CEOs.</p>
+                <a className="pr-li" href="https://www.linkedin.com/in/john-d-erickson/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
               </div>
             </div>
             <div className="pr">
@@ -195,6 +196,7 @@ function Home() {
                 <p>A licensed clinical counselor with thirty years across consulting, higher
                   education, and behavioral health. Forms leaders, restores teams, and guides his
                   own peer advisory forums.</p>
+                <a className="pr-li" href="https://www.linkedin.com/in/dennishumphrey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
               </div>
             </div>
           </div>
