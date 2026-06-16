@@ -111,7 +111,7 @@ function Home() {
         <div className="wrap serve-in">
           <div>
             <span className="kicker on-cream">Who we serve</span>
-            <h2>Built for small and <em>family-held</em> businesses.</h2>
+            <h2>Built for family and <em>closely-held</em> businesses.</h2>
           </div>
           <div className="serve-body">
             <p className="body" style={{ marginTop: 0 }}>
