@@ -421,3 +421,11 @@ img{max-width:100%;display:block}
     padding:14px 26px;
   }
 }
+/* ============================================================
+   HERO / NAV SPACING — give hero content room below the
+   transparent nav so the eyebrow stops colliding with the
+   nav row. Applies at desktop width; mobile handled above.
+   ============================================================ */
+@media(min-width:821px){
+  .hero-inner{padding-top:120px}
+}
