@@ -77,6 +77,30 @@ function About() {
             doctoral coursework on conflict and leadership.
           </p>
 
+          <h2>Advisors</h2>
+          <p>
+            For specific engagements, we bring in advisors with particular depth in their field.
+          </p>
+
+          <div className="about-bio">
+            <img className="about-headshot" src="/img/people/heather.jpg" alt="Heather L. Humphrey" loading="lazy" />
+            <div>
+              <h2 style={{ marginTop: 0 }}>Heather L. Humphrey</h2>
+              <p>
+                <b>Strategy · Change · Communications.</b> Heather Humphrey has spent more than thirty
+                years helping leaders turn big ideas into real results — most recently as Director of
+                Communications, Change &amp; Culture at AbbVie, where she built a high-impact
+                communications function inside one of healthcare's largest organizations and led teams
+                through complex change. She starts where the work starts, with purpose, then builds the
+                strategy, structure, and systems that move it forward and keep it moving. As a strategic
+                advisor to Eden, she brings sound judgment, creative thinking, and the discipline to
+                finish the parts most people skip. She and her husband, Dennis, make their home in
+                Illinois.
+              </p>
+              <a className="pr-li" href="https://www.linkedin.com/in/heather-l-humphrey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+          </div>
+
           <p style={{ marginTop: 36 }}>
             <Link to="/books" className="btn btn-ghost">The books</Link>{' '}
             <Link to="/contact" className="btn btn-gold" style={{ marginLeft: 8 }}>Start a conversation</Link>
