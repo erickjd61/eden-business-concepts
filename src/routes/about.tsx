@@ -49,9 +49,10 @@ function About() {
                 <b>Systems · Scaling · Strategy.</b> A Purdue-trained engineer whose career carried him
                 through the Navy and the State Department before three decades in leadership
                 development. John builds the operating systems, leads the scaling work, chairs peer
-                advisory forums for owners and CEOs, and serves as doctoral faculty at Trinity. He is
-                the author of multiple books on leadership and growth. He and his wife, Debbie, married
-                in 1982; they have two grown children and three grandchildren.
+                advisory forums for owners and CEOs, and serves as doctoral faculty at Trinity
+                International University in Chicago. He is
+                the author of multiple books on leadership and growth. He and his wife, Debbie, live in
+                Lafayette, Indiana. They have two adult children and three grandchildren.
               </p>
               <a className="pr-li" href="https://www.linkedin.com/in/john-d-erickson/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             </div>
@@ -65,8 +66,8 @@ function About() {
                 <b>Formation · Conflict · Depth.</b> A licensed clinical counselor with thirty years
                 across consulting, higher education, and behavioral health. Dennis forms leaders,
                 restores teams, and guides his own peer advisory forums, bringing a clinician's
-                understanding of what actually moves people. He has been married for thirty-six years
-                and has four grown children and two grandchildren.
+                understanding of what actually moves people. He and his wife, Heather, have four adult
+                children and two grandchildren.
               </p>
               <a className="pr-li" href="https://www.linkedin.com/in/dennishumphrey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             </div>
@@ -94,8 +95,7 @@ function About() {
                 through complex change. She starts where the work starts, with purpose, then builds the
                 strategy, structure, and systems that move it forward and keep it moving. As a strategic
                 advisor to Eden, she brings sound judgment, creative thinking, and the discipline to
-                finish the parts most people skip. She and her husband, Dennis, make their home in
-                Illinois.
+                finish the parts most people skip.
               </p>
               <a className="pr-li" href="https://www.linkedin.com/in/heather-l-humphrey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             </div>
