@@ -5,14 +5,6 @@ export const Route = createFileRoute('/snapshot')({ component: Snapshot })
 
 type Root = 'R' | 'V' | 'A'
 
-function saveResult(payload: {
-  firstName: string; lastInitial: string; teamCode: string; answers: Root[]; viewedFaith: boolean
-}) {
-  import('../lib/snapshot.server')
-    .then((m) => m.saveSnapshot({ data: payload }))
-    .catch(() => {})
-}
-
 const ROOTS: Record<Root, {
   name: string; type: string
   market: string; reflect: string[]; move: string; sin: string; faith: string
@@ -83,12 +75,7 @@ function Snapshot() {
 
   function pick(root: Root) {
     const next = [...answers]; next[idx] = root; setAnswers(next)
-    setTimeout(() => { if (idx < QUESTIONS.length - 1) setIdx(idx + 1); else finish(next) }, 160)
-  }
-
-  function finish(all: Root[]) {
-    setStage('report')
-    saveResult({ firstName: first, lastInitial: initial, teamCode: team, answers: all, viewedFaith: false })
+    setTimeout(() => { if (idx < QUESTIONS.length - 1) setIdx(idx + 1); else setStage('report') }, 160)
   }
 
   const counts = useMemo(() => {
@@ -97,11 +84,6 @@ function Snapshot() {
   const order = (['R', 'V', 'A'] as Root[]).sort((a, b) => counts[b] - counts[a])
   const dom = order[0], sec = order[1]
   const near = counts[dom] - counts[sec] <= 1
-
-  function revealFaith() {
-    setShowFaith(true)
-    saveResult({ firstName: first, lastInitial: initial, teamCode: team, answers, viewedFaith: true })
-  }
 
   return (
     <main>
@@ -173,7 +155,7 @@ function Snapshot() {
               {!showFaith && (
                 <div style={{ textAlign: 'center', margin: '48px 0 0', paddingTop: 38, borderTop: '1px solid var(--line)' }}>
                   <p style={{ color: 'var(--cream-dim)', marginBottom: 20 }}>There is a deeper layer to this, in the language of faith.</p>
-                  <button className="btn btn-ghost" onClick={revealFaith}>Read it in the language of faith</button>
+                  <button className="btn btn-ghost" onClick={() => setShowFaith(true)}>Read it in the language of faith</button>
                 </div>
               )}
 
