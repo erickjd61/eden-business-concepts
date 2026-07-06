@@ -1,17 +1,24 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
-import { saveSnapshot } from '../lib/snapshot.server'
 
 export const Route = createFileRoute('/snapshot')({ component: Snapshot })
 
 type Root = 'R' | 'V' | 'A'
 
+function saveResult(payload: {
+  firstName: string; lastInitial: string; teamCode: string; answers: Root[]; viewedFaith: boolean
+}) {
+  import('../lib/snapshot.server')
+    .then((m) => m.saveSnapshot({ data: payload }))
+    .catch(() => {})
+}
+
 const ROOTS: Record<Root, {
-  name: string; type: string; color: string
+  name: string; type: string
   market: string; reflect: string[]; move: string; sin: string; faith: string
 }> = {
   R: {
-    name: 'Respect', type: 'The Proven', color: 'var(--gold-br)',
+    name: 'Respect', type: 'The Proven',
     market: "You lead with Respect. Underneath, you\u2019re reaching to be seen as capable and right \u2014 and what you most fear is being exposed as less than you appear. At your best it makes you sharp and prepared, the one who tells the truth others won\u2019t and steadies a room with sound judgment. Under pressure it turns: you defend instead of listen, being wrong feels like being exposed, and you begin protecting your standing at the cost of the people around you. The growth isn\u2019t less drive \u2014 it\u2019s a steadier source. Respect you have to seize stays fragile; respect received, from work done well and judgment offered freely, sets you down. That\u2019s the road from the sharpest in the room to the wisest.",
     reflect: ['Where does being right matter more to you than being useful?', 'Whose correction do you resist most \u2014 and why?', 'What would change if your standing were already secure?'],
     move: 'Name one thing you\u2019ve been defending, and let yourself be wrong about it \u2014 out loud, to one person you trust.',
@@ -19,7 +26,7 @@ const ROOTS: Record<Root, {
     faith: "Named plainly, this pull is pride. Respect is meant to be received; pride reaches out and takes it into its own hands. Underneath lies the question, Who am I? Pride answers with your record \u2014 so any challenge to your competence feels like a challenge to your very self. The Gospel answers differently: God knew you and held you before you had proved a single thing, and His regard for you cannot be lost. That kind of security is the only ground solid enough to make a leader wise. Pride is really wisdom turned in on itself. Christ turns it back out.",
   },
   V: {
-    name: 'Value', type: 'The Builder', color: 'var(--gold-br)',
+    name: 'Value', type: 'The Builder',
     market: "You lead with Value. Underneath, you\u2019re reaching to matter \u2014 and what you most fear is being insignificant, that without what you build you are nothing. At your best you\u2019re the engine: you carry weight others can\u2019t, and things move when you walk in. Under pressure the engine can\u2019t idle \u2014 rest feels like exposure, you tie your worth to the result, and a flat quarter lands not as a setback but as a verdict on you. The growth is to find your worth where results can\u2019t reach it. When your value isn\u2019t on the line, you stop building monuments to yourself and start building people. That\u2019s the turn from a driven performer into an inspiration.",
     reflect: ['Where do you keep producing when you should rest?', 'Whose worth \u2014 including your own \u2014 are you measuring by output?', 'What would change this week if your value weren\u2019t on the line?'],
     move: 'Name the result you\u2019re treating as a verdict on yourself, and tell one trusted person: I am not that result.',
@@ -27,7 +34,7 @@ const ROOTS: Record<Root, {
     faith: "Named plainly, this pull is idolatry. It takes a good thing \u2014 your work \u2014 and hangs your whole worth on it. Underneath lies the question, Why am I here? Idolatry answers with your output, and no one can live on output alone. The Gospel answers differently: your worth was settled at the cross, while you were still producing nothing. You are not what you produce. You are loved, and the love came first. When your worth rests there instead, the work stops being an idol and becomes an offering.",
   },
   A: {
-    name: 'Approval', type: 'The Peacemaker', color: 'var(--gold-br)',
+    name: 'Approval', type: 'The Peacemaker',
     market: "You lead with Approval. Underneath, you\u2019re reaching to be accepted and wanted \u2014 and what you most fear is rejection, being left on the outside. At your best you\u2019re the one who holds a team together: you read the room, sense what\u2019s unsaid, and build belonging. Under pressure the same instinct goes quiet at the worst moment \u2014 the hard conversation gets delayed, softened, or swallowed, because the disapproval on the other side feels heavier than you can carry. You keep a surface peace while the real problem grows beneath it. The growth is a security that doesn\u2019t depend on the next person\u2019s approval \u2014 and from there you can finally say the hard thing, which is the only road to a peace that lasts.",
     reflect: ['What hard conversation have you been avoiding to keep the peace?', 'Whose approval are you managing right now?', 'What would you say if their displeasure couldn\u2019t touch you?'],
     move: 'Have the one honest conversation you\u2019ve been softening \u2014 and say the true thing, in care.',
@@ -81,7 +88,7 @@ function Snapshot() {
 
   function finish(all: Root[]) {
     setStage('report')
-    saveSnapshot({ data: { firstName: first, lastInitial: initial, teamCode: team, answers: all, viewedFaith: false } }).catch(() => {})
+    saveResult({ firstName: first, lastInitial: initial, teamCode: team, answers: all, viewedFaith: false })
   }
 
   const counts = useMemo(() => {
@@ -93,7 +100,7 @@ function Snapshot() {
 
   function revealFaith() {
     setShowFaith(true)
-    saveSnapshot({ data: { firstName: first, lastInitial: initial, teamCode: team, answers, viewedFaith: true } }).catch(() => {})
+    saveResult({ firstName: first, lastInitial: initial, teamCode: team, answers, viewedFaith: true })
   }
 
   return (

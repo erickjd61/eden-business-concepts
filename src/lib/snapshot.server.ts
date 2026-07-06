@@ -2,8 +2,6 @@
 // Server function: validate a Snapshot submission, score it, and save it.
 // The tally is recomputed here — the browser's numbers are never trusted.
 import { createServerFn } from '@tanstack/react-start'
-import { ID } from 'node-appwrite'
-import { getServerDatabases, DB_ID, SNAPSHOT_COLLECTION_ID } from './appwrite'
 
 type Root = 'R' | 'V' | 'A'
 const ROOTS: Root[] = ['R', 'V', 'A']
@@ -23,6 +21,9 @@ function clean(s: unknown, max: number): string {
 export const saveSnapshot = createServerFn({ method: 'POST' })
   .validator((data: Payload) => data)
   .handler(async ({ data }) => {
+    const { ID } = await import('node-appwrite')
+    const { getServerDatabases, DB_ID, SNAPSHOT_COLLECTION_ID } = await import('./appwrite')
+
     const answers = Array.isArray(data.answers) ? data.answers : []
 
     // Must be exactly 12 answers, each R/V/A.
