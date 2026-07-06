@@ -1,3 +1,4 @@
+'use server'
 // Server function: validate a Snapshot submission, score it, and save it.
 // The tally is recomputed here — the browser's numbers are never trusted.
 import { createServerFn } from '@tanstack/react-start'
