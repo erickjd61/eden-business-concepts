@@ -10,6 +10,11 @@ import viteReact from '@vitejs/plugin-react'
 // framework (react/solid), NOT the host. Do not let tooling exports drop nitro().
 const config = defineConfig({
   resolve: { tsconfigPaths: true },
+  server: {
+    watch: {
+      ignored: ['**/.env', '**/.env.*', '**/tsconfig.json', '**/node_modules/**', '**/.git/**'],
+    },
+  },
   plugins: [
     tanstackStart(),
     nitro(),

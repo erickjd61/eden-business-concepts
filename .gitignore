@@ -16,3 +16,4 @@ todos.json
 content/thrive-space/_index.json
 BUILD_STATE.md
 *.log
+.env

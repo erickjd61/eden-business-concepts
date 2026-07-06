@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ThriveSpaceRouteImport } from './routes/thrive-space'
+import { Route as SnapshotRouteImport } from './routes/snapshot'
 import { Route as ScalingRouteImport } from './routes/scaling'
 import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -25,6 +26,11 @@ import { Route as InsightsSlugRouteImport } from './routes/insights.$slug'
 const ThriveSpaceRoute = ThriveSpaceRouteImport.update({
   id: '/thrive-space',
   path: '/thrive-space',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SnapshotRoute = SnapshotRouteImport.update({
+  id: '/snapshot',
+  path: '/snapshot',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ScalingRoute = ScalingRouteImport.update({
@@ -93,6 +99,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
   '/scaling': typeof ScalingRoute
+  '/snapshot': typeof SnapshotRoute
   '/thrive-space': typeof ThriveSpaceRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights/': typeof InsightsIndexRoute
@@ -107,6 +114,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
   '/scaling': typeof ScalingRoute
+  '/snapshot': typeof SnapshotRoute
   '/thrive-space': typeof ThriveSpaceRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights': typeof InsightsIndexRoute
@@ -122,6 +130,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
   '/scaling': typeof ScalingRoute
+  '/snapshot': typeof SnapshotRoute
   '/thrive-space': typeof ThriveSpaceRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights/': typeof InsightsIndexRoute
@@ -138,6 +147,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/leadership'
     | '/scaling'
+    | '/snapshot'
     | '/thrive-space'
     | '/insights/$slug'
     | '/insights/'
@@ -152,6 +162,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/leadership'
     | '/scaling'
+    | '/snapshot'
     | '/thrive-space'
     | '/insights/$slug'
     | '/insights'
@@ -166,6 +177,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/leadership'
     | '/scaling'
+    | '/snapshot'
     | '/thrive-space'
     | '/insights/$slug'
     | '/insights/'
@@ -181,6 +193,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   LeadershipRoute: typeof LeadershipRoute
   ScalingRoute: typeof ScalingRoute
+  SnapshotRoute: typeof SnapshotRoute
   ThriveSpaceRoute: typeof ThriveSpaceRoute
   InsightsSlugRoute: typeof InsightsSlugRoute
   InsightsIndexRoute: typeof InsightsIndexRoute
@@ -193,6 +206,13 @@ declare module '@tanstack/react-router' {
       path: '/thrive-space'
       fullPath: '/thrive-space'
       preLoaderRoute: typeof ThriveSpaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/snapshot': {
+      id: '/snapshot'
+      path: '/snapshot'
+      fullPath: '/snapshot'
+      preLoaderRoute: typeof SnapshotRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/scaling': {
@@ -285,6 +305,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   LeadershipRoute: LeadershipRoute,
   ScalingRoute: ScalingRoute,
+  SnapshotRoute: SnapshotRoute,
   ThriveSpaceRoute: ThriveSpaceRoute,
   InsightsSlugRoute: InsightsSlugRoute,
   InsightsIndexRoute: InsightsIndexRoute,
