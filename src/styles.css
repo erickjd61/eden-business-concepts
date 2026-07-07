@@ -48,10 +48,10 @@ img{max-width:100%;display:block}
 .site-nav{position:absolute;top:0;left:0;right:0;z-index:30}
 .site-nav.solid{position:sticky;background:rgba(27,38,50,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:92px}
-.logo{display:flex;align-items:baseline;gap:9px}
+.logo{display:flex;align-items:baseline;gap:9px;flex-shrink:0;white-space:nowrap}
 .logo img{height:34px;width:auto;align-self:center}
 .logo .e{font-family:var(--serif);font-style:italic;font-size:33px;color:var(--gold-br)}
-.logo .r{font-family:var(--mono);font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream)}
+.logo .r{font-family:var(--mono);font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);white-space:nowrap}
 .nav-links{display:flex;gap:30px;align-items:center;font-family:var(--mono);font-size:15px;letter-spacing:.02em}
 .nav-links a{color:var(--cream-dim)}
 .nav-links a:hover{color:var(--cream)}
