@@ -106,6 +106,24 @@ function Home() {
         </div>
       </section>
 
+
+      {/* SNAPSHOT INVITATION */}
+      <section className="sec on-cream snapshot-invite">
+        <div className="wrap">
+          <span className="kicker on-cream">Start here</span>
+          <h2>Before we talk, meet your <em>root.</em></h2>
+          <p className="body">
+            Underneath how every leader works is a deeper question — what you're reaching for,
+            and what you're most afraid of. The <b>Root Motivation Snapshot</b> is a free,
+            five-minute look at yours. It's the same lens we bring to our advising work, and a
+            good place to begin.
+          </p>
+          <div className="row" style={{ marginTop: 28 }}>
+            <Link to="/snapshot" className="btn btn-gold">Take the Snapshot →</Link>
+          </div>
+        </div>
+      </section>
+
       {/* WHO WE SERVE — family business */}
       <section className="sec on-cream2 serve">
         <div className="wrap serve-in">
