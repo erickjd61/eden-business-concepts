@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
+import { saveSnapshot } from '../lib/snapshot.server'
 
 export const Route = createFileRoute('/snapshot')({ component: Snapshot })
 
@@ -75,7 +76,12 @@ function Snapshot() {
 
   function pick(root: Root) {
     const next = [...answers]; next[idx] = root; setAnswers(next)
-    setTimeout(() => { if (idx < QUESTIONS.length - 1) setIdx(idx + 1); else setStage('report') }, 160)
+    setTimeout(() => { if (idx < QUESTIONS.length - 1) setIdx(idx + 1); else finish(next) }, 160)
+  }
+
+  function finish(all: Root[]) {
+    setStage('report')
+    saveSnapshot({ data: { firstName: first, lastInitial: initial, teamCode: team, answers: all, viewedFaith: false } }).catch(() => {})
   }
 
   const counts = useMemo(() => {
@@ -84,6 +90,11 @@ function Snapshot() {
   const order = (['R', 'V', 'A'] as Root[]).sort((a, b) => counts[b] - counts[a])
   const dom = order[0], sec = order[1]
   const near = counts[dom] - counts[sec] <= 1
+
+  function revealFaith() {
+    setShowFaith(true)
+    saveSnapshot({ data: { firstName: first, lastInitial: initial, teamCode: team, answers, viewedFaith: true } }).catch(() => {})
+  }
 
   return (
     <main>
@@ -155,7 +166,7 @@ function Snapshot() {
               {!showFaith && (
                 <div style={{ textAlign: 'center', margin: '48px 0 0', paddingTop: 38, borderTop: '1px solid var(--line)' }}>
                   <p style={{ color: 'var(--cream-dim)', marginBottom: 20 }}>There is a deeper layer to this, in the language of faith.</p>
-                  <button className="btn btn-ghost" onClick={() => setShowFaith(true)}>Read it in the language of faith</button>
+                  <button className="btn btn-ghost" onClick={revealFaith}>Read it in the language of faith</button>
                 </div>
               )}
 
