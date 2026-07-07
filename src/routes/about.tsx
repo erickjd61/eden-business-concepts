@@ -43,6 +43,11 @@ function About() {
             heart: <b>who you are, what drives you, why you make the decisions you do, and why you
             respond to people and situations the way you do.</b>
           </p>
+          <p>
+            Our work is informed by a conviction that leadership is, at root, a matter of the heart.
+            That conviction runs through our books and shapes how we advise — and we serve leaders of
+            every background, faith or none.
+          </p>
 
           <div className="about-bio">
             <img className="about-headshot" src="/img/people/john.jpg" alt="John D. Erickson" loading="lazy" />

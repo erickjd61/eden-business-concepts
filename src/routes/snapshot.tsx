@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
 import { saveSnapshot } from '../lib/save-snapshot'
 
@@ -115,6 +115,20 @@ function Snapshot() {
                 <input value={team} onChange={(e) => setTeam(e.target.value)} placeholder="Team code (optional)" className="snap-input" />
               </div>
               <button className="btn btn-gold" disabled={!first.trim()} onClick={() => setStage('quiz')}>Begin</button>
+              <div style={{ marginTop: 44, paddingTop: 26, borderTop: '1px solid var(--line)', maxWidth: 560 }}>
+                <p style={{ margin: 0, color: 'var(--cream-dim)', fontSize: 15, lineHeight: 1.6 }}>
+                  <b style={{ color: 'var(--cream)' }}>About this tool.</b> The Snapshot grew out of three
+                  decades of advisory and counseling practice. It's a structured self-reflection
+                  exercise, not a validated psychological assessment — a way to notice what tends to
+                  drive you and to start a better conversation, not a clinical measure and not a tool
+                  for hiring or selection.
+                </p>
+                <p style={{ marginTop: 14, marginBottom: 0, color: 'var(--cream-dim)', fontSize: 15, lineHeight: 1.6 }}>
+                  Your answers are used to generate your results and, if you'd like, to help us improve
+                  the tool. We don't sell them or share them with advertisers. See our{' '}
+                  <Link to="/privacy" style={{ color: 'var(--gold-br)' }}>privacy policy</Link> for details.
+                </p>
+              </div>
             </>
           )}
 

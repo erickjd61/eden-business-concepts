@@ -9,12 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WhoWeServeRouteImport } from './routes/who-we-serve'
 import { Route as ThriveSpaceRouteImport } from './routes/thrive-space'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SnapshotRouteImport } from './routes/snapshot'
 import { Route as ScalingRouteImport } from './routes/scaling'
+import { Route as RootMotivationsRouteImport } from './routes/root-motivations'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as LeadershipRouteImport } from './routes/leadership'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ConflictRouteImport } from './routes/conflict'
 import { Route as BooksRouteImport } from './routes/books'
@@ -22,9 +25,18 @@ import { Route as ArchiveRouteImport } from './routes/archive'
 import { Route as AdvisingRouteImport } from './routes/advising'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WorkIndexRouteImport } from './routes/work.index'
 import { Route as InsightsIndexRouteImport } from './routes/insights.index'
+import { Route as WorkTheflowstashonRouteImport } from './routes/work.theflowstashon'
+import { Route as WorkServicemasterRouteImport } from './routes/work.servicemaster'
+import { Route as WorkMainstreamRouteImport } from './routes/work.mainstream'
 import { Route as InsightsSlugRouteImport } from './routes/insights.$slug'
 
+const WhoWeServeRoute = WhoWeServeRouteImport.update({
+  id: '/who-we-serve',
+  path: '/who-we-serve',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ThriveSpaceRoute = ThriveSpaceRouteImport.update({
   id: '/thrive-space',
   path: '/thrive-space',
@@ -45,6 +57,11 @@ const ScalingRoute = ScalingRouteImport.update({
   path: '/scaling',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RootMotivationsRoute = RootMotivationsRouteImport.update({
+  id: '/root-motivations',
+  path: '/root-motivations',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
@@ -53,6 +70,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const LeadershipRoute = LeadershipRouteImport.update({
   id: '/leadership',
   path: '/leadership',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -90,9 +112,29 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkIndexRoute = WorkIndexRouteImport.update({
+  id: '/work/',
+  path: '/work/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const InsightsIndexRoute = InsightsIndexRouteImport.update({
   id: '/insights/',
   path: '/insights/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkTheflowstashonRoute = WorkTheflowstashonRouteImport.update({
+  id: '/work/theflowstashon',
+  path: '/work/theflowstashon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkServicemasterRoute = WorkServicemasterRouteImport.update({
+  id: '/work/servicemaster',
+  path: '/work/servicemaster',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkMainstreamRoute = WorkMainstreamRouteImport.update({
+  id: '/work/mainstream',
+  path: '/work/mainstream',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InsightsSlugRoute = InsightsSlugRouteImport.update({
@@ -109,14 +151,21 @@ export interface FileRoutesByFullPath {
   '/books': typeof BooksRoute
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
   '/leadership': typeof LeadershipRoute
   '/privacy': typeof PrivacyRoute
+  '/root-motivations': typeof RootMotivationsRoute
   '/scaling': typeof ScalingRoute
   '/snapshot': typeof SnapshotRoute
   '/terms': typeof TermsRoute
   '/thrive-space': typeof ThriveSpaceRoute
+  '/who-we-serve': typeof WhoWeServeRoute
   '/insights/$slug': typeof InsightsSlugRoute
+  '/work/mainstream': typeof WorkMainstreamRoute
+  '/work/servicemaster': typeof WorkServicemasterRoute
+  '/work/theflowstashon': typeof WorkTheflowstashonRoute
   '/insights/': typeof InsightsIndexRoute
+  '/work/': typeof WorkIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -126,14 +175,21 @@ export interface FileRoutesByTo {
   '/books': typeof BooksRoute
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
   '/leadership': typeof LeadershipRoute
   '/privacy': typeof PrivacyRoute
+  '/root-motivations': typeof RootMotivationsRoute
   '/scaling': typeof ScalingRoute
   '/snapshot': typeof SnapshotRoute
   '/terms': typeof TermsRoute
   '/thrive-space': typeof ThriveSpaceRoute
+  '/who-we-serve': typeof WhoWeServeRoute
   '/insights/$slug': typeof InsightsSlugRoute
+  '/work/mainstream': typeof WorkMainstreamRoute
+  '/work/servicemaster': typeof WorkServicemasterRoute
+  '/work/theflowstashon': typeof WorkTheflowstashonRoute
   '/insights': typeof InsightsIndexRoute
+  '/work': typeof WorkIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -144,14 +200,21 @@ export interface FileRoutesById {
   '/books': typeof BooksRoute
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
   '/leadership': typeof LeadershipRoute
   '/privacy': typeof PrivacyRoute
+  '/root-motivations': typeof RootMotivationsRoute
   '/scaling': typeof ScalingRoute
   '/snapshot': typeof SnapshotRoute
   '/terms': typeof TermsRoute
   '/thrive-space': typeof ThriveSpaceRoute
+  '/who-we-serve': typeof WhoWeServeRoute
   '/insights/$slug': typeof InsightsSlugRoute
+  '/work/mainstream': typeof WorkMainstreamRoute
+  '/work/servicemaster': typeof WorkServicemasterRoute
+  '/work/theflowstashon': typeof WorkTheflowstashonRoute
   '/insights/': typeof InsightsIndexRoute
+  '/work/': typeof WorkIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -163,14 +226,21 @@ export interface FileRouteTypes {
     | '/books'
     | '/conflict'
     | '/contact'
+    | '/faq'
     | '/leadership'
     | '/privacy'
+    | '/root-motivations'
     | '/scaling'
     | '/snapshot'
     | '/terms'
     | '/thrive-space'
+    | '/who-we-serve'
     | '/insights/$slug'
+    | '/work/mainstream'
+    | '/work/servicemaster'
+    | '/work/theflowstashon'
     | '/insights/'
+    | '/work/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -180,14 +250,21 @@ export interface FileRouteTypes {
     | '/books'
     | '/conflict'
     | '/contact'
+    | '/faq'
     | '/leadership'
     | '/privacy'
+    | '/root-motivations'
     | '/scaling'
     | '/snapshot'
     | '/terms'
     | '/thrive-space'
+    | '/who-we-serve'
     | '/insights/$slug'
+    | '/work/mainstream'
+    | '/work/servicemaster'
+    | '/work/theflowstashon'
     | '/insights'
+    | '/work'
   id:
     | '__root__'
     | '/'
@@ -197,14 +274,21 @@ export interface FileRouteTypes {
     | '/books'
     | '/conflict'
     | '/contact'
+    | '/faq'
     | '/leadership'
     | '/privacy'
+    | '/root-motivations'
     | '/scaling'
     | '/snapshot'
     | '/terms'
     | '/thrive-space'
+    | '/who-we-serve'
     | '/insights/$slug'
+    | '/work/mainstream'
+    | '/work/servicemaster'
+    | '/work/theflowstashon'
     | '/insights/'
+    | '/work/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -215,18 +299,32 @@ export interface RootRouteChildren {
   BooksRoute: typeof BooksRoute
   ConflictRoute: typeof ConflictRoute
   ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
   LeadershipRoute: typeof LeadershipRoute
   PrivacyRoute: typeof PrivacyRoute
+  RootMotivationsRoute: typeof RootMotivationsRoute
   ScalingRoute: typeof ScalingRoute
   SnapshotRoute: typeof SnapshotRoute
   TermsRoute: typeof TermsRoute
   ThriveSpaceRoute: typeof ThriveSpaceRoute
+  WhoWeServeRoute: typeof WhoWeServeRoute
   InsightsSlugRoute: typeof InsightsSlugRoute
+  WorkMainstreamRoute: typeof WorkMainstreamRoute
+  WorkServicemasterRoute: typeof WorkServicemasterRoute
+  WorkTheflowstashonRoute: typeof WorkTheflowstashonRoute
   InsightsIndexRoute: typeof InsightsIndexRoute
+  WorkIndexRoute: typeof WorkIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/who-we-serve': {
+      id: '/who-we-serve'
+      path: '/who-we-serve'
+      fullPath: '/who-we-serve'
+      preLoaderRoute: typeof WhoWeServeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/thrive-space': {
       id: '/thrive-space'
       path: '/thrive-space'
@@ -255,6 +353,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ScalingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/root-motivations': {
+      id: '/root-motivations'
+      path: '/root-motivations'
+      fullPath: '/root-motivations'
+      preLoaderRoute: typeof RootMotivationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -267,6 +372,13 @@ declare module '@tanstack/react-router' {
       path: '/leadership'
       fullPath: '/leadership'
       preLoaderRoute: typeof LeadershipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -318,11 +430,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/': {
+      id: '/work/'
+      path: '/work'
+      fullPath: '/work/'
+      preLoaderRoute: typeof WorkIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/insights/': {
       id: '/insights/'
       path: '/insights'
       fullPath: '/insights/'
       preLoaderRoute: typeof InsightsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/theflowstashon': {
+      id: '/work/theflowstashon'
+      path: '/work/theflowstashon'
+      fullPath: '/work/theflowstashon'
+      preLoaderRoute: typeof WorkTheflowstashonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/servicemaster': {
+      id: '/work/servicemaster'
+      path: '/work/servicemaster'
+      fullPath: '/work/servicemaster'
+      preLoaderRoute: typeof WorkServicemasterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/mainstream': {
+      id: '/work/mainstream'
+      path: '/work/mainstream'
+      fullPath: '/work/mainstream'
+      preLoaderRoute: typeof WorkMainstreamRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/insights/$slug': {
@@ -343,14 +483,21 @@ const rootRouteChildren: RootRouteChildren = {
   BooksRoute: BooksRoute,
   ConflictRoute: ConflictRoute,
   ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
   LeadershipRoute: LeadershipRoute,
   PrivacyRoute: PrivacyRoute,
+  RootMotivationsRoute: RootMotivationsRoute,
   ScalingRoute: ScalingRoute,
   SnapshotRoute: SnapshotRoute,
   TermsRoute: TermsRoute,
   ThriveSpaceRoute: ThriveSpaceRoute,
+  WhoWeServeRoute: WhoWeServeRoute,
   InsightsSlugRoute: InsightsSlugRoute,
+  WorkMainstreamRoute: WorkMainstreamRoute,
+  WorkServicemasterRoute: WorkServicemasterRoute,
+  WorkTheflowstashonRoute: WorkTheflowstashonRoute,
   InsightsIndexRoute: InsightsIndexRoute,
+  WorkIndexRoute: WorkIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

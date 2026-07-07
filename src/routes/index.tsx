@@ -145,6 +145,9 @@ function Home() {
               That's why our scaling work and our conflict work so often run together. In a
               family-held company, you rarely get one without the other.
             </p>
+            <p style={{ marginTop: 20 }}>
+              <Link to="/who-we-serve" style={{ color: 'var(--gold)' }}>More on who we serve →</Link>
+            </p>
           </div>
         </div>
       </section>

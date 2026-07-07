@@ -14,6 +14,8 @@ export function SiteFooter() {
           <Link to="/insights">Insights</Link>
           <Link to="/root-motivations">Root Motivations</Link>
           <Link to="/about">About</Link>
+          <Link to="/who-we-serve">Who We Serve</Link>
+          <Link to="/faq">FAQ</Link>
           <Link to="/archive">Archive</Link>
           <Link to="/privacy">Privacy</Link>
           <Link to="/terms">Terms</Link>
