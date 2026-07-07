@@ -196,6 +196,15 @@ function Snapshot() {
               )}
 
               <p className="note" style={{ marginTop: 40 }}>A tool for self-awareness and growth, not for hiring or selection. It shows the order of your pulls, not a clinical measure — a beginning for the conversation, not the last word.</p>
+
+              <div style={{ marginTop: 48, paddingTop: 40, borderTop: '1px solid var(--line)', textAlign: 'center' }}>
+                <p style={{ color: 'var(--cream)', fontSize: 18, lineHeight: 1.6, maxWidth: 520, margin: '0 auto 22px' }}>
+                  Your root is a good place to begin a conversation. If it would help to think it
+                  through together — about your leadership, your team, or the company you're building
+                  — we'd be glad to talk.
+                </p>
+                <a className="btn btn-gold" href="https://calendly.com/john-erickson-meeting/30min" target="_blank" rel="noopener noreferrer">Book a 30-minute conversation →</a>
+              </div>
             </>
           )}
 
