@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
-import { saveSnapshot } from '../lib/save-snapshot'
+import { saveSnapshot } from '../lib/snapshot-save'
 
 import { seoHead } from '../lib/seo'
 
@@ -84,7 +84,7 @@ function Snapshot() {
 
   function finish(all: Root[]) {
     setStage('report')
-    saveSnapshot({ firstName: first, lastInitial: initial, teamCode: team, answers: all, viewedFaith: false }).catch(() => {})
+    saveSnapshot({ data: { firstName: first, lastInitial: initial, teamCode: team, answers: all, viewedFaith: false } }).catch((e) => console.error('Snapshot save failed', e))
   }
 
   const counts = useMemo(() => {
@@ -96,7 +96,7 @@ function Snapshot() {
 
   function revealFaith() {
     setShowFaith(true)
-    saveSnapshot({ firstName: first, lastInitial: initial, teamCode: team, answers, viewedFaith: true }).catch(() => {})
+    saveSnapshot({ data: { firstName: first, lastInitial: initial, teamCode: team, answers, viewedFaith: true } }).catch((e) => console.error('Snapshot save failed', e))
   }
 
   return (
