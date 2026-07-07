@@ -12,6 +12,7 @@ export function SiteFooter() {
           <Link to="/work">Work</Link>
           <Link to="/books">Books</Link>
           <Link to="/insights">Insights</Link>
+          <Link to="/root-motivations">Root Motivations</Link>
           <Link to="/about">About</Link>
           <Link to="/archive">Archive</Link>
           <Link to="/privacy">Privacy</Link>

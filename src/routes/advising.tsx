@@ -67,6 +67,13 @@ function Advising() {
             A standing monthly seat. A defined sprint around a single decision. A board-level
             sounding role. We don't sell a package; we fit the engagement to the moment.
           </p>
+          <p className="graphic-cap" style={{ marginTop: 18 }}>
+            That flexibility is a discipline, not the absence of one. We're process consultants —
+            John is an Advanced Process Consultant certified by the Society of Process Consultants —
+            so we listen first, diagnose before we prescribe, and bring the right tools to your
+            situation rather than the same track to everyone's. The aim throughout is capability, not
+            dependency: we've done the work well when you can run it without us.
+          </p>
           <p style={{ marginTop: 32 }}>
             <Link to="/contact" className="btn btn-gold">Start a conversation</Link>
           </p>

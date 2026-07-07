@@ -9,6 +9,8 @@ import {
 import appCss from '../styles.css?url'
 import { SiteNav } from '../components/SiteNav'
 import { SiteFooter } from '../components/SiteFooter'
+import { JsonLd } from '../components/JsonLd'
+import { organizationGraph } from '../lib/schema'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -55,6 +57,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        <JsonLd data={organizationGraph} />
         <SiteNav />
         {children}
         <SiteFooter />

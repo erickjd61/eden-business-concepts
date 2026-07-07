@@ -1,6 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 
 import { seoHead } from '../lib/seo'
+import { JsonLd } from '../components/JsonLd'
+import { booksSchema } from '../lib/schema'
 
 export const Route = createFileRoute('/books')({
   head: () => seoHead({ title: "Books · Eden Business Concepts", description: "Eight books on leadership, motivation, and the formed life — the frameworks behind Eden's advising work with leaders and owners." }), component: Books })
@@ -27,6 +29,7 @@ const BOOKS = [
 function Books() {
   return (
     <main>
+      <JsonLd data={booksSchema} />
       <section className="page-hero">
         <div className="wrap">
           <span className="kicker">The books</span>
