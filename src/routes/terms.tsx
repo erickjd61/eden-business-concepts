@@ -3,7 +3,7 @@ import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/terms')({
   head: () =>
-    seoHead({
+    seoHead({ path: '/terms',
       title: 'Terms of Use · Eden Business Concepts',
       description:
         'The terms that govern your use of the Eden Business Concepts website, its content, and the Root Motivation Snapshot.',

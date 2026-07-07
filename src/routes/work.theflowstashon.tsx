@@ -3,7 +3,7 @@ import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/work/theflowstashon')({
   head: () =>
-    seoHead({
+    seoHead({ path: '/work/theflowstashon',
       title: 'THEFLOWSTASHON XTRM · Eden Business Concepts',
       description:
         'From an idea to a fully functioning business through our scaling process, with ongoing advising and coaching for the founders.',
@@ -40,6 +40,7 @@ function FlowstashonCase() {
             generation, client experience, and tracking client progress, alongside their own personal
             growth as leaders. The two run together on purpose: the business grows as they do.
           </p>
+          {/* TODO(owner): add a founder quote from Carla and one concrete outcome (e.g. launch date, customers or locations, a revenue or traction milestone). Do not invent them. */}
         </div>
       </section>
 

@@ -5,7 +5,7 @@ import { JsonLd } from '../components/JsonLd'
 import { booksSchema } from '../lib/schema'
 
 export const Route = createFileRoute('/books')({
-  head: () => seoHead({ title: "Books · Eden Business Concepts", description: "Eight books on leadership, motivation, and the formed life — the frameworks behind Eden's advising work with leaders and owners." }), component: Books })
+  head: () => seoHead({ path: '/books', title: "Books · Eden Business Concepts", description: "Eight books on leadership, motivation, and the formed life — the frameworks behind Eden's advising work with leaders and owners." }), component: Books })
 
 const BOOKS = [
   ['/img/books/leaders-motivation.jpg', "The Leader's Motivation",
@@ -22,7 +22,7 @@ const BOOKS = [
     'The four questions that define your life — the framework at the heart of our leadership work.', 'https://a.co/d/059iI9JE'],
   ['/img/books/heart-well-kept.jpg', 'A Heart Well Kept',
     'Building relationships that flourish, rooted in five pillars: peace, patience, process, purpose, and permission.', 'https://a.co/d/0c1ytRgC'],
-  ['/img/books/word-worshipping.jpg', 'When the Word Comes Worshipping',
+  ['/img/books/word-worshipping.jpg', 'When the Word Comes Worshiping',
     'A reflection on Scripture, worship, and the formed life.', 'https://a.co/d/04Fu8ley'],
 ]
 

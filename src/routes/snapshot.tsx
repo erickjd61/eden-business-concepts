@@ -5,7 +5,7 @@ import { saveSnapshot } from '../lib/snapshot-save'
 import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/snapshot')({
-  head: () => seoHead({ title: "Root Motivation Snapshot · Eden Business Concepts", description: "A twelve-question reflection on what drives you as a leader — Respect, Value, or Approval. A few honest minutes, a starting point." }), component: Snapshot })
+  head: () => seoHead({ path: '/snapshot', title: "Root Motivation Snapshot · Eden Business Concepts", description: "A twelve-question reflection on what drives you as a leader — Respect, Value, or Approval. A few honest minutes, a starting point." }), component: Snapshot })
 
 type Root = 'R' | 'V' | 'A'
 

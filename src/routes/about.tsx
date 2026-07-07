@@ -3,7 +3,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/about')({
-  head: () => seoHead({ title: "About · Eden Business Concepts", description: "Two credentialed principals and thirty-five years of shared work, since 1991, advising closely held and family businesses." }), component: About })
+  head: () => seoHead({ path: '/about', title: "About · Eden Business Concepts", description: "Two credentialed principals and thirty-five years of shared work, since 1991, advising closely held and family businesses." }), component: About })
 
 function About() {
   return (

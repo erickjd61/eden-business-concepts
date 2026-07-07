@@ -3,7 +3,7 @@ import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/work/mainstream')({
   head: () =>
-    seoHead({
+    seoHead({ path: '/work/mainstream',
       title: 'Mainstream Real Estate Services · Eden Business Concepts',
       description:
         'Seven years of strategic advising alongside a family-held firm as it grew from a three-person operation into a provider to large commercial clients.',

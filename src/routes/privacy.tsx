@@ -3,7 +3,7 @@ import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/privacy')({
   head: () =>
-    seoHead({
+    seoHead({ path: '/privacy',
       title: 'Privacy Policy · Eden Business Concepts',
       description:
         'How Eden Business Concepts collects, uses, and protects the information you share, including Root Motivation Snapshot responses.',

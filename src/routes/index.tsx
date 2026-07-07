@@ -3,7 +3,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/')({
-  head: () => seoHead({ title: "Eden Business Concepts · A heart-focused approach to scaling and leadership", description: "Operational rigor and human depth from one team. Eden helps owners of closely held and family businesses scale, lead, and navigate what's hard." }), component: Home })
+  head: () => seoHead({ path: '/', title: "Eden Business Concepts · A heart-focused approach to scaling and leadership", description: "Operational rigor and human depth from one team. Eden helps owners of closely held and family businesses scale, lead, and navigate what's hard." }), component: Home })
 
 const BOOKS = [
   ["The Leader's Motivation", '/img/books/leaders-motivation.jpg', 'https://a.co/d/04Xwfn5a'],
@@ -13,7 +13,7 @@ const BOOKS = [
   ['Three Paths Out of Paradise', '/img/books/three-paths.jpg', 'https://a.co/d/0i8YWort'],
   ['Known and Called', '/img/books/known-called.jpg', 'https://a.co/d/059iI9JE'],
   ['A Heart Well Kept', '/img/books/heart-well-kept.jpg', 'https://a.co/d/0c1ytRgC'],
-  ['When the Word Comes Worshipping', '/img/books/word-worshipping.jpg', 'https://a.co/d/04Fu8ley'],
+  ['When the Word Comes Worshiping', '/img/books/word-worshipping.jpg', 'https://a.co/d/04Fu8ley'],
 ]
 
 const PILLARS = [
@@ -237,16 +237,16 @@ function Home() {
           <cite><b>David Ballard</b> · Attorney, Legal Aid of Western Michigan</cite>
           <div className="testi-grid">
             <figure className="testi">
-              <blockquote>"Perhaps most encouraging was how surprisingly well he described my heart, as well as that of my wife — it helped me along the path to more open, honest, and grateful relationships."</blockquote>
-              <figcaption><b>Bob Shockey</b>Westrock-MPS · Lansing, MI</figcaption>
+              <blockquote>"John and Dennis have brought structure, focus, clarity, and accountability into our business with the EOS model. They have led us to move away from operational reactions to intentional growth. Our business would not have the greater future we are moving toward with their insight and leadership."</blockquote>
+              <figcaption><b>Devin Moore</b>Integrator · ServiceMaster Commercial Cleaning Services</figcaption>
             </figure>
             <figure className="testi">
               <blockquote>"I am proud to count John Erickson as a mentor and friend… his wisdom and compassion have been a beacon for me throughout the last decade."</blockquote>
               <figcaption><b>Shaun Clarke, PhD</b>Nuclear Engineering Faculty · University of Michigan</figcaption>
             </figure>
             <figure className="testi">
-              <blockquote>"I trust Dennis immeasurably. There is power in his ability to listen and discern the root issues behind actions and feelings."</blockquote>
-              <figcaption><b>Jason Mead</b>Teacher and Varsity Coach · Aurora, IL</figcaption>
+              <blockquote>"Dennis and John have been critical advisors for us to move Mainstream from a three-person on-call business to a growing provider to large commercial real estate clients."</blockquote>
+              <figcaption><b>Lou Rotella</b>Vice President · Mainstream Real Estate Services</figcaption>
             </figure>
           </div>
         </div>

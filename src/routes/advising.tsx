@@ -3,7 +3,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/advising')({
-  head: () => seoHead({ title: "Strategic Advising · Eden Business Concepts", description: "A senior thinking partner for strategy, succession, org design, and the hard personnel calls owners of closely held businesses face." }), component: Advising })
+  head: () => seoHead({ path: '/advising', title: "Strategic Advising · Eden Business Concepts", description: "A senior thinking partner for strategy, succession, org design, and the hard personnel calls owners of closely held businesses face." }), component: Advising })
 
 const WHERE = [
   ['Strategy & growth', 'The big directional calls, pressure-tested before you commit.'],

@@ -1,7 +1,13 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/thrive-space')({
-  head: () => ({ meta: [{ title: 'Thrive Space · Eden Business Concepts' }] }),
+  head: () =>
+    seoHead({
+      title: 'Thrive Space · Eden Business Concepts',
+      description: 'Perspectives and tools for leaders who want to build something that lasts.',
+      path: '/thrive-space',
+    }),
   component: Page,
 })
 

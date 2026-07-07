@@ -4,7 +4,7 @@ import { JsonLd } from '../components/JsonLd'
 
 export const Route = createFileRoute('/faq')({
   head: () =>
-    seoHead({
+    seoHead({ path: '/faq',
       title: 'Frequently Asked Questions · Eden Business Concepts',
       description:
         'Answers on how Eden works — EOS/Traction, engagement pricing, family and non-family businesses, faith, and the Root Motivation Snapshot.',
@@ -16,6 +16,7 @@ const FAQ = [
   { q: 'Are you EOS Implementers?', a: "We're not affiliated with EOS Worldwide. We support implementation of the Traction/EOS model developed by Gino Wickman, and we serve as fractional integrators under the guidance of a certified EOS Implementer — helping you install and run the operating system rather than selling you the framework." },
   { q: 'How are engagements priced?', a: "We don't sell packages. Because we're process consultants, we scope each engagement to the situation — a standing advisory seat, a defined sprint around a single decision, or a full operating-system build — and we're clear about what it will take before we begin. If cost is the question, the fastest answer is a short conversation." },
   { q: 'Do you only work with family businesses?', a: 'No. Our deepest experience is with closely held and family-owned companies, where ownership, leadership, and family are woven together, but we work with owner-led and closely held businesses of many kinds. If the company and the people leading it are inseparable, we are likely a fit.' },
+  // TODO(owner): replace this answer with real text covering first-90-days output, meeting cadence, and typical duration.
   { q: 'What does an engagement actually look like?', a: "It starts with listening. We diagnose before we prescribe, then bring the right tools to your situation rather than running every company down the same track, and we design the cadence with you. The aim throughout is capability, not dependency: we've done the work well when the company can run without us." },
   { q: 'Is your work faith-based?', a: 'Our work is informed by a conviction that leadership is, at root, a matter of the heart. That conviction runs through our books, and the Root Motivation Snapshot offers an optional layer in the language of faith. We serve leaders of every background, faith or none, and our advisory work stands on its own.' },
   { q: 'Do you work remotely or in person?', a: 'Both. We are based in Lafayette, Indiana and the Chicago area, we work with clients across the Midwest and beyond, and we meet in person and remotely as the work requires.' },

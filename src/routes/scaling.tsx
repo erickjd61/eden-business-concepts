@@ -4,7 +4,7 @@ import { PredictableSuccessCurve } from '../components/Graphics'
 import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/scaling')({
-  head: () => seoHead({ title: "Scaling · Eden Business Concepts", description: "Build the operating system your company runs on, so it's an asset — not a job that owns you. We integrate Traction/EOS tools into how the business works." }), component: Scaling })
+  head: () => seoHead({ path: '/scaling', title: "Scaling · Eden Business Concepts", description: "Build the operating system your company runs on, so it's an asset — not a job that owns you. We integrate Traction/EOS tools into how the business works." }), component: Scaling })
 
 const EOS = [
   ['Vision', 'Everyone sees where the company is going — and how it gets there.'],

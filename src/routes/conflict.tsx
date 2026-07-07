@@ -3,7 +3,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/conflict')({
-  head: () => seoHead({ title: "Conflict Transformation · Eden Business Concepts", description: "Move through conflict without breaking the relationship or the business — a proven five-stage path for teams under real strain." }), component: Conflict })
+  head: () => seoHead({ path: '/conflict', title: "Conflict Transformation · Eden Business Concepts", description: "Move through conflict without breaking the relationship or the business — a proven five-stage path for teams under real strain." }), component: Conflict })
 
 const STEPS = [
   ['01', 'Avoidance', 'Where most teams live — the conflict goes underground and hardens.'],

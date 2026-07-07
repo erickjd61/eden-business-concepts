@@ -1,5 +1,9 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { getPost, renderMarkdown, formatDate } from '../posts'
+import { JsonLd } from '../components/JsonLd'
+
+const SITE = 'https://www.edenbusinessconcepts.com'
+const ID = 'https://edenbusinessconcepts.com'
 
 export const Route = createFileRoute('/insights/$slug')({
   loader: ({ params }) => {
@@ -7,19 +11,35 @@ export const Route = createFileRoute('/insights/$slug')({
     if (!post) throw notFound()
     return { post }
   },
-  head: ({ loaderData }) => ({
-    meta: [
-      { title: `${loaderData?.post.title ?? 'Insights'} · Eden Business Concepts` },
-      { name: 'description', content: loaderData?.post.excerpt ?? '' },
-    ],
-  }),
+  head: ({ loaderData }) => {
+    const slug = loaderData?.post.slug ?? ''
+    return {
+      meta: [
+        { title: `${loaderData?.post.title ?? 'Insights'} · Eden Business Concepts` },
+        { name: 'description', content: loaderData?.post.excerpt ?? '' },
+      ],
+      links: [{ rel: 'canonical', href: `${SITE}/insights/${slug}` }],
+    }
+  },
   component: Article,
 })
 
 function Article() {
   const { post } = Route.useLoaderData()
+  const url = `${SITE}/insights/${post.slug}`
+  const blogPosting = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    ...(post.date ? { datePublished: post.date } : {}),
+    author: { '@id': `${ID}/#john-erickson` },
+    publisher: { '@id': `${ID}/#organization` },
+    mainEntityOfPage: url,
+    url,
+  }
   return (
     <main>
+      <JsonLd data={blogPosting} />
       <section className="page-hero">
         <div className="wrap">
           <span className="kicker">

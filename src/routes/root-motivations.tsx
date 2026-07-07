@@ -4,7 +4,7 @@ import { JsonLd } from '../components/JsonLd'
 
 export const Route = createFileRoute('/root-motivations')({
   head: () =>
-    seoHead({
+    seoHead({ path: '/root-motivations',
       title: 'The Three Root Motivations of a Leader · Eden Business Concepts',
       description:
         'Every leader is driven by a root motivation — Respect, Value, or Approval. What each one is, its strength, its failure mode under pressure, and how it matures.',

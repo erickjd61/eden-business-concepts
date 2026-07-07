@@ -1,16 +1,14 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { archivedPosts, formatDate } from '../posts'
+import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/archive')({
-  head: () => ({
-    meta: [
-      { title: 'Archive · Eden Business Concepts' },
-      {
-        name: 'description',
-        content: 'Earlier writing from the Eden Business Concepts archive.',
-      },
-    ],
-  }),
+  head: () =>
+    seoHead({
+      title: 'Archive · Eden Business Concepts',
+      description: 'Earlier writing from the Eden Business Concepts archive.',
+      path: '/archive',
+    }),
   component: Archive,
 })
 

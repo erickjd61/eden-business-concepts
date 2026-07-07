@@ -89,15 +89,18 @@ export const organizationGraph = {
   ],
 }
 
+const JOHN = { '@id': `${BASE}/#john-erickson` }
+const DENNIS = { '@id': `${BASE}/#dennis-humphrey` }
+
 const BOOKS = [
-  { title: "The Leader's Motivation", url: 'https://a.co/d/04Xwfn5a', authors: ['John D. Erickson'] },
-  { title: "The Leader's Foundation", url: 'https://a.co/d/01gAEQjT', authors: ['John D. Erickson'] },
-  { title: "The Leader's Direction", url: 'https://a.co/d/00bO2w6y', authors: ['John D. Erickson'] },
-  { title: 'Leading Through Conflict', url: 'https://a.co/d/0j5j0MQ8', authors: ['John D. Erickson', 'Dennis R. Humphrey'] },
-  { title: 'Three Paths Out of Paradise', url: 'https://a.co/d/0i8YWort', authors: ['John D. Erickson'] },
-  { title: 'Known and Called', url: 'https://a.co/d/059iI9JE', authors: ['John D. Erickson'] },
-  { title: 'A Heart Well Kept', url: 'https://a.co/d/0c1ytRgC', authors: ['John D. Erickson'], isbn: '9798258404688' },
-  { title: 'When the Word Comes Worshipping', url: 'https://a.co/d/04Fu8ley', authors: ['John D. Erickson'] },
+  { title: "The Leader's Motivation", url: 'https://a.co/d/04Xwfn5a', authors: [JOHN], isbn: '9798250239189', datePublished: '2026-02-28' },
+  { title: "The Leader's Foundation", url: 'https://a.co/d/01gAEQjT', authors: [JOHN], isbn: '9798250038140', datePublished: '2026-02-27' },
+  { title: "The Leader's Direction", url: 'https://a.co/d/00bO2w6y', authors: [JOHN], isbn: '9798250116435', datePublished: '2026-02-27' },
+  { title: 'Leading Through Conflict', url: 'https://a.co/d/0j5j0MQ8', authors: [JOHN, DENNIS], isbn: '9798247087939', datePublished: '2026-02-25' },
+  { title: 'Three Paths Out of Paradise', url: 'https://a.co/d/0i8YWort', authors: [JOHN], isbn: '9781719480314', datePublished: '2018-06-10' },
+  { title: 'Known and Called', url: 'https://a.co/d/059iI9JE', authors: [JOHN], isbn: '9798255932658', datePublished: '2026-04-11' },
+  { title: 'A Heart Well Kept', url: 'https://a.co/d/0c1ytRgC', authors: [JOHN], isbn: '9798258404688', datePublished: '2026-04-22' },
+  { title: 'When the Word Comes Worshiping', url: 'https://a.co/d/04Fu8ley', authors: [JOHN], isbn: '9798249749453', datePublished: '2026-02-25' },
 ]
 
 export const booksSchema = {
@@ -110,9 +113,11 @@ export const booksSchema = {
     item: {
       '@type': 'Book',
       name: b.title,
-      author: b.authors.map((n) => ({ '@type': 'Person', name: n })),
+      author: b.authors,
       url: b.url,
-      ...(b.isbn ? { isbn: b.isbn } : {}),
+      isbn: b.isbn,
+      datePublished: b.datePublished,
+      bookFormat: 'https://schema.org/Paperback',
     },
   })),
 }

@@ -3,7 +3,7 @@ import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/work/servicemaster')({
   head: () =>
-    seoHead({
+    seoHead({ path: '/work/servicemaster',
       title: 'ServiceMaster Commercial Cleaning Services · Eden Business Concepts',
       description:
         'How a founder-led commercial cleaning company moved from operational reactions to intentional, systematized growth — a business scaling case.',
@@ -61,6 +61,7 @@ function ServiceMasterCase() {
             growth, and a pipeline that no longer lives in any one person's memory. The company is
             building toward new markets from a foundation designed to carry them.
           </p>
+          {/* TODO(owner): add 1-2 quantified outcomes here (e.g. markets opened, revenue or pipeline growth over a period, headcount then vs. now, time from founder-dependent to running without the founder). Do not invent numbers. */}
         </div>
       </section>
 

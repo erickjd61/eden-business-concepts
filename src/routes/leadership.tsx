@@ -4,7 +4,7 @@ import { FourQuestions } from '../components/Graphics'
 import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/leadership')({
-  head: () => seoHead({ title: "Leadership Development · Eden Business Concepts", description: "Form leaders with the depth to carry weight — developing owners, successors, and teams in closely held and family-owned businesses." }), component: Leadership })
+  head: () => seoHead({ path: '/leadership', title: "Leadership Development · Eden Business Concepts", description: "Form leaders with the depth to carry weight — developing owners, successors, and teams in closely held and family-owned businesses." }), component: Leadership })
 
 function Leadership() {
   return (

@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import { nitro } from 'nitro/vite'
 import viteReact from '@vitejs/plugin-react'
+import { edenSitemap } from './vite-sitemap'
 
 // PROTECTED FILE — deployment depends on this exact plugin set.
 // TanStack Start on Vercel REQUIRES the Nitro plugin. Nitro auto-detects
@@ -19,6 +20,8 @@ const config = defineConfig({
     tanstackStart(),
     nitro(),
     viteReact(),
+    // Additive only — writes public/sitemap.xml at build/dev start. Does not affect the set above.
+    edenSitemap(),
   ],
 })
 

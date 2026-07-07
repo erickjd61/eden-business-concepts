@@ -3,7 +3,7 @@ import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/who-we-serve')({
   head: () =>
-    seoHead({
+    seoHead({ path: '/who-we-serve',
       title: 'Who We Serve · Eden Business Concepts',
       description:
         'Eden advises owners of closely held and family-owned businesses — commercial services, real estate, and founder-led companies across Indiana, Chicago, and the Midwest.',
