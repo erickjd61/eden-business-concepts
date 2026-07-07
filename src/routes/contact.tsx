@@ -30,9 +30,6 @@ function Contact() {
             <b>Offices</b><br />
             Lafayette, Indiana &amp; Chicago, Illinois
           </p>
-          <p className="note">
-            A contact form will live here — wiring it to delivery is a quick next step.
-          </p>
         </div>
       </section>
     </main>
