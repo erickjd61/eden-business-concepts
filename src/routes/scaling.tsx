@@ -1,7 +1,10 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { PredictableSuccessCurve } from '../components/Graphics'
 
-export const Route = createFileRoute('/scaling')({ component: Scaling })
+import { seoHead } from '../lib/seo'
+
+export const Route = createFileRoute('/scaling')({
+  head: () => seoHead({ title: "Scaling · Eden Business Concepts", description: "Build the operating system your company runs on, so it's an asset — not a job that owns you. We integrate Traction/EOS tools into how the business works." }), component: Scaling })
 
 const EOS = [
   ['Vision', 'Everyone sees where the company is going — and how it gets there.'],
@@ -34,7 +37,7 @@ function Scaling() {
           <p className="body">
             We know how to weave the EOS model and tools into your entire operation, bringing the
             clarity and accountability you need to meet all the goals you set. Not a binder on a
-            shelf — the way the company actually runs, in every function.
+            shelf — the way the company actually runs, in every function. We're not affiliated with EOS Worldwide: we support implementation of the Traction/EOS model developed by Gino Wickman, serving as fractional integrators under the guidance of a certified EOS Implementer.
           </p>
           <div className="card-grid" style={{ marginTop: 40 }}>
             {EOS.map(([t, d], i) => (
@@ -56,7 +59,7 @@ function Scaling() {
           </h2>
           <div className="graphic-frame"><PredictableSuccessCurve /></div>
           <p className="graphic-cap">
-            Every company climbs through Early Struggle, Fun, and Whitewater toward{' '}
+            Predictable Success is the business lifecycle model developed by Les McKeown. Every company climbs through Early Struggle, Fun, and Whitewater toward{' '}
             <b>Predictable Success</b> — then the curve naturally pulls it back down toward the
             Treadmill. The hardest crossing is Whitewater. The real work is <b>getting to
             Predictable Success and staying there</b> — and that's the work we do with you.
@@ -77,11 +80,15 @@ function Scaling() {
             a family transition</b> — and we treat it that way.
           </p>
           <div className="pullquote" style={{ borderLeftColor: 'var(--gold)' }}>
-            "A full multi-market franchise build for a commercial-services company — operating
-            system, stage-gated playbooks, and a seven-system tech stack. Founder-led to scalable,
-            with the systems to prove it."
-            <span>In practice · client named privately on request</span>
+            "John and Dennis have brought structure, focus, clarity, and accountability into our
+            business with the EOS model. They have led us to move away from operational reactions to
+            intentional growth. Our business would not have the greater future we are moving toward
+            with their insight and leadership."
+            <span>Devin Moore · ServiceMaster Commercial Cleaning Services</span>
           </div>
+          <p style={{ marginTop: 20 }}>
+            <Link to="/work/servicemaster" style={{ color: 'var(--gold-br)' }}>Read the ServiceMaster case →</Link>
+          </p>
           <p style={{ marginTop: 36 }}>
             <Link to="/contact" className="btn btn-dark">Start a conversation</Link>
           </p>

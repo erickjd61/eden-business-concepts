@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/advising')({ component: Advising })
+import { seoHead } from '../lib/seo'
+
+export const Route = createFileRoute('/advising')({
+  head: () => seoHead({ title: "Strategic Advising · Eden Business Concepts", description: "A senior thinking partner for strategy, succession, org design, and the hard personnel calls owners of closely held businesses face." }), component: Advising })
 
 const WHERE = [
   ['Strategy & growth', 'The big directional calls, pressure-tested before you commit.'],
@@ -40,6 +43,15 @@ function Advising() {
             We bring pattern recognition from decades of companies — and the judgment to know which
             patterns apply to yours and which don't. For <b>family-held businesses</b>, that often
             means holding the business decision and the family reality in the same conversation.
+          </p>
+          <div className="pullquote" style={{ borderLeftColor: 'var(--gold)', marginTop: 32 }}>
+            "Dennis and John have been critical advisors for us to move Mainstream from a
+            three-person on-call business to a growing provider to large commercial real estate
+            clients."
+            <span>Lou Rotella · Mainstream Real Estate Services</span>
+          </div>
+          <p style={{ marginTop: 20 }}>
+            <Link to="/work/mainstream" style={{ color: 'var(--gold-br)' }}>Read the Mainstream case →</Link>
           </p>
         </div>
       </section>

@@ -10,8 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ThriveSpaceRouteImport } from './routes/thrive-space'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SnapshotRouteImport } from './routes/snapshot'
 import { Route as ScalingRouteImport } from './routes/scaling'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ConflictRouteImport } from './routes/conflict'
@@ -28,6 +30,11 @@ const ThriveSpaceRoute = ThriveSpaceRouteImport.update({
   path: '/thrive-space',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SnapshotRoute = SnapshotRouteImport.update({
   id: '/snapshot',
   path: '/snapshot',
@@ -36,6 +43,11 @@ const SnapshotRoute = SnapshotRouteImport.update({
 const ScalingRoute = ScalingRouteImport.update({
   id: '/scaling',
   path: '/scaling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LeadershipRoute = LeadershipRouteImport.update({
@@ -98,8 +110,10 @@ export interface FileRoutesByFullPath {
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
+  '/privacy': typeof PrivacyRoute
   '/scaling': typeof ScalingRoute
   '/snapshot': typeof SnapshotRoute
+  '/terms': typeof TermsRoute
   '/thrive-space': typeof ThriveSpaceRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights/': typeof InsightsIndexRoute
@@ -113,8 +127,10 @@ export interface FileRoutesByTo {
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
+  '/privacy': typeof PrivacyRoute
   '/scaling': typeof ScalingRoute
   '/snapshot': typeof SnapshotRoute
+  '/terms': typeof TermsRoute
   '/thrive-space': typeof ThriveSpaceRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights': typeof InsightsIndexRoute
@@ -129,8 +145,10 @@ export interface FileRoutesById {
   '/conflict': typeof ConflictRoute
   '/contact': typeof ContactRoute
   '/leadership': typeof LeadershipRoute
+  '/privacy': typeof PrivacyRoute
   '/scaling': typeof ScalingRoute
   '/snapshot': typeof SnapshotRoute
+  '/terms': typeof TermsRoute
   '/thrive-space': typeof ThriveSpaceRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights/': typeof InsightsIndexRoute
@@ -146,8 +164,10 @@ export interface FileRouteTypes {
     | '/conflict'
     | '/contact'
     | '/leadership'
+    | '/privacy'
     | '/scaling'
     | '/snapshot'
+    | '/terms'
     | '/thrive-space'
     | '/insights/$slug'
     | '/insights/'
@@ -161,8 +181,10 @@ export interface FileRouteTypes {
     | '/conflict'
     | '/contact'
     | '/leadership'
+    | '/privacy'
     | '/scaling'
     | '/snapshot'
+    | '/terms'
     | '/thrive-space'
     | '/insights/$slug'
     | '/insights'
@@ -176,8 +198,10 @@ export interface FileRouteTypes {
     | '/conflict'
     | '/contact'
     | '/leadership'
+    | '/privacy'
     | '/scaling'
     | '/snapshot'
+    | '/terms'
     | '/thrive-space'
     | '/insights/$slug'
     | '/insights/'
@@ -192,8 +216,10 @@ export interface RootRouteChildren {
   ConflictRoute: typeof ConflictRoute
   ContactRoute: typeof ContactRoute
   LeadershipRoute: typeof LeadershipRoute
+  PrivacyRoute: typeof PrivacyRoute
   ScalingRoute: typeof ScalingRoute
   SnapshotRoute: typeof SnapshotRoute
+  TermsRoute: typeof TermsRoute
   ThriveSpaceRoute: typeof ThriveSpaceRoute
   InsightsSlugRoute: typeof InsightsSlugRoute
   InsightsIndexRoute: typeof InsightsIndexRoute
@@ -208,6 +234,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ThriveSpaceRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/snapshot': {
       id: '/snapshot'
       path: '/snapshot'
@@ -220,6 +253,13 @@ declare module '@tanstack/react-router' {
       path: '/scaling'
       fullPath: '/scaling'
       preLoaderRoute: typeof ScalingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/leadership': {
@@ -304,8 +344,10 @@ const rootRouteChildren: RootRouteChildren = {
   ConflictRoute: ConflictRoute,
   ContactRoute: ContactRoute,
   LeadershipRoute: LeadershipRoute,
+  PrivacyRoute: PrivacyRoute,
   ScalingRoute: ScalingRoute,
   SnapshotRoute: SnapshotRoute,
+  TermsRoute: TermsRoute,
   ThriveSpaceRoute: ThriveSpaceRoute,
   InsightsSlugRoute: InsightsSlugRoute,
   InsightsIndexRoute: InsightsIndexRoute,

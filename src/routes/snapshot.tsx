@@ -2,7 +2,10 @@ import { createFileRoute } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
 import { saveSnapshot } from '../lib/save-snapshot'
 
-export const Route = createFileRoute('/snapshot')({ component: Snapshot })
+import { seoHead } from '../lib/seo'
+
+export const Route = createFileRoute('/snapshot')({
+  head: () => seoHead({ title: "Root Motivation Snapshot · Eden Business Concepts", description: "A twelve-question reflection on what drives you as a leader — Respect, Value, or Approval. A few honest minutes, a starting point." }), component: Snapshot })
 
 type Root = 'R' | 'V' | 'A'
 
@@ -105,7 +108,7 @@ function Snapshot() {
             <>
               <span className="kicker">The Root Motivation Snapshot</span>
               <h1>A look beneath what you do, at what you’re <em>reaching for.</em></h1>
-              <p className="lede">Twelve questions, a few honest minutes. Choose the option most true — and when none fits perfectly, the closest one anyway. Which way you lean when the fit is rough is itself part of the answer.</p>
+              <p className="lede">Twelve questions, a few honest minutes. Choose the option most true — and when none fits perfectly, the closest one anyway. An imperfect fit still tells you something worth reflecting on.</p>
               <div style={{ margin: '28px 0', display: 'grid', gap: 14, maxWidth: 420 }}>
                 <input value={first} onChange={(e) => setFirst(e.target.value)} placeholder="First name" className="snap-input" />
                 <input value={initial} onChange={(e) => setInitial(e.target.value)} placeholder="Last initial" className="snap-input" />

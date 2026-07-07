@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/conflict')({ component: Conflict })
+import { seoHead } from '../lib/seo'
+
+export const Route = createFileRoute('/conflict')({
+  head: () => seoHead({ title: "Conflict Transformation · Eden Business Concepts", description: "Move through conflict without breaking the relationship or the business — a proven five-stage path for teams under real strain." }), component: Conflict })
 
 const STEPS = [
   ['01', 'Avoidance', 'Where most teams live — the conflict goes underground and hardens.'],
@@ -53,8 +56,8 @@ function Conflict() {
           </h2>
           <p className="graphic-cap" style={{ marginTop: 18 }}>
             Especially <b>family-business tension</b>, where the relationships and the org chart are
-            knotted together. Dennis brings a licensed clinical counselor's depth; together we keep
-            it practical and oriented toward the business moving forward.
+            knotted together. Dennis, a Licensed Clinical Professional Counselor (LCPC) licensed in Illinois and Wisconsin, brings a clinician's depth; together we keep
+            it practical and oriented toward the business moving forward. We're both certified conflict mediators through Live at Peace.
           </p>
           <div className="pullquote" style={{ marginTop: 36 }}>
             "Leading Through Conflict — the model in book form, co-authored by John D. Erickson and

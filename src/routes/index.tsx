@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/')({ component: Home })
+import { seoHead } from '../lib/seo'
+
+export const Route = createFileRoute('/')({
+  head: () => seoHead({ title: "Eden Business Concepts · A heart-focused approach to scaling and leadership", description: "Operational rigor and human depth from one team. Eden helps owners of closely held and family businesses scale, lead, and navigate what's hard." }), component: Home })
 
 const BOOKS = [
   ["The Leader's Motivation", '/img/books/leaders-motivation.jpg', 'https://a.co/d/04Xwfn5a'],
@@ -210,7 +213,7 @@ function Home() {
               <div>
                 <h4>Dennis R. Humphrey, PhD</h4>
                 <div className="role">Formation · Conflict · Depth</div>
-                <p>A licensed clinical counselor with thirty years across consulting, higher
+                <p>A Licensed Clinical Professional Counselor (LCPC) in Illinois and Wisconsin, with thirty years across consulting, higher
                   education, and behavioral health. Forms leaders, restores teams, and guides his
                   own peer advisory forums.</p>
                 <a className="pr-li" href="https://www.linkedin.com/in/dennishumphrey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>

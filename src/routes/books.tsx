@@ -1,6 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/books')({ component: Books })
+import { seoHead } from '../lib/seo'
+
+export const Route = createFileRoute('/books')({
+  head: () => seoHead({ title: "Books · Eden Business Concepts", description: "Eight books on leadership, motivation, and the formed life — the frameworks behind Eden's advising work with leaders and owners." }), component: Books })
 
 const BOOKS = [
   ['/img/books/leaders-motivation.jpg', "The Leader's Motivation",

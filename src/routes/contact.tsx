@@ -1,6 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/contact')({ component: Contact })
+import { seoHead } from '../lib/seo'
+
+export const Route = createFileRoute('/contact')({
+  head: () => seoHead({ title: "Contact · Eden Business Concepts", description: "Tell us where the company is and what's keeping you up at night. Start a conversation with Eden Business Concepts." }), component: Contact })
 
 function Contact() {
   return (

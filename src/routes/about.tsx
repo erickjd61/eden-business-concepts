@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/about')({ component: About })
+import { seoHead } from '../lib/seo'
+
+export const Route = createFileRoute('/about')({
+  head: () => seoHead({ title: "About · Eden Business Concepts", description: "Two credentialed principals and thirty-five years of shared work, since 1991, advising closely held and family businesses." }), component: About })
 
 function About() {
   return (
@@ -23,7 +26,7 @@ function About() {
         <div className="wrap">
           <h2>The firm</h2>
           <p>
-            We're led by two practitioners with thirty-five years of shared work across business,
+            We're led by two practitioners with thirty-five years of shared work — together since 1991 — across business,
             the academy, and the boardroom. What makes the work unusual is the combination:
             <b> operational rigor and human depth, from the same team</b> — the discipline to scale
             a company and the wisdom to grow the people leading it. For any given engagement, we
@@ -63,7 +66,7 @@ function About() {
             <div>
               <h2 style={{ marginTop: 0 }}>Dennis R. Humphrey, PhD</h2>
               <p>
-                <b>Formation · Conflict · Depth.</b> A licensed clinical counselor with thirty years
+                <b>Formation · Conflict · Depth.</b> A Licensed Clinical Professional Counselor (LCPC) in Illinois and Wisconsin, with thirty years
                 across consulting, higher education, and behavioral health. Dennis forms leaders,
                 restores teams, and guides his own peer advisory forums, bringing a clinician's
                 understanding of what actually moves people. He and his wife, Heather, have four adult
@@ -75,7 +78,7 @@ function About() {
 
           <p className="note">
             Together they co-author and co-teach, including <b>Leading Through Conflict</b> and
-            doctoral coursework on conflict and leadership.
+            doctoral coursework on conflict and leadership. Both are also certified conflict mediators through Live at Peace.
           </p>
 
           <h2>Advisors</h2>
