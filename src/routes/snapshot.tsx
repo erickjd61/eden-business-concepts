@@ -1,6 +1,13 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
-import { saveSnapshot } from '../lib/snapshot.server'
+
+export const Route = createFileRoute('/snapshot')({ component: Snapshot })
+
+type Root = 'R' | 'V' | 'A'
+
+function saveSnapshot(opts: { data: { firstName: string; lastInitial: string; teamCode: string; answers: Root[]; viewedFaith: boolean } }) {
+  return import('../lib/snapshot-save').then((m) => m.saveSnapshot(opts))
+}
 
 export const Route = createFileRoute('/snapshot')({ component: Snapshot })
 
