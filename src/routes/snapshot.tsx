@@ -1,13 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useMemo, useState } from 'react'
-
-export const Route = createFileRoute('/snapshot')({ component: Snapshot })
-
-type Root = 'R' | 'V' | 'A'
-
-function saveSnapshot(opts: { data: { firstName: string; lastInitial: string; teamCode: string; answers: Root[]; viewedFaith: boolean } }) {
-  return import('../lib/snapshot-save').then((m) => m.saveSnapshot(opts))
-}
+import { saveSnapshot } from '../lib/save-snapshot'
 
 export const Route = createFileRoute('/snapshot')({ component: Snapshot })
 
@@ -88,7 +81,7 @@ function Snapshot() {
 
   function finish(all: Root[]) {
     setStage('report')
-    saveSnapshot({ data: { firstName: first, lastInitial: initial, teamCode: team, answers: all, viewedFaith: false } }).catch(() => {})
+    saveSnapshot({ firstName: first, lastInitial: initial, teamCode: team, answers: all, viewedFaith: false }).catch(() => {})
   }
 
   const counts = useMemo(() => {
@@ -100,7 +93,7 @@ function Snapshot() {
 
   function revealFaith() {
     setShowFaith(true)
-    saveSnapshot({ data: { firstName: first, lastInitial: initial, teamCode: team, answers, viewedFaith: true } }).catch(() => {})
+    saveSnapshot({ firstName: first, lastInitial: initial, teamCode: team, answers, viewedFaith: true }).catch(() => {})
   }
 
   return (
