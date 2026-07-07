@@ -114,8 +114,7 @@ function Home() {
           <h2>Before we talk, meet your <em>root.</em></h2>
           <p className="body">
             Underneath how every leader works is a deeper question — what you're reaching for,
-            and what you're most afraid of. The <b>Root Motivation Snapshot</b> is a free,
-            five-minute look at yours. It's the same lens we bring to our advising work, and a
+            and what you're most afraid of. The <b>Root Motivation Snapshot</b> is a free look at yours — twelve questions, a few honest minutes. It's the same lens we bring to our advising work, and a
             good place to begin.
           </p>
           <div className="row" style={{ marginTop: 28 }}>
