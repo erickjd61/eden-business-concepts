@@ -19,6 +19,7 @@ export function SiteNav() {
           <Link to="/scaling">Scaling</Link>
           <Link to="/leadership">Leadership</Link>
           <Link to="/advising">Advising</Link>
+          <Link to="/snapshot">Snapshot</Link>
           <Link to="/books">Books</Link>
           <Link to="/insights">Insights</Link>
           <Link to="/about">About</Link>
@@ -41,7 +42,8 @@ export function SiteNav() {
         <div className="nav-drawer">
           <Link to="/scaling" onClick={close}>Scaling</Link>
           <Link to="/leadership" onClick={close}>Leadership</Link>
-          <Link to="/advising" onClick={close}>Advising</Link>
+          <Link to="/advising">Advising</Link>
+          <Link to="/snapshot">Snapshot</Link>
           <Link to="/books" onClick={close}>Books</Link>
           <Link to="/insights" onClick={close}>Insights</Link>
           <Link to="/about" onClick={close}>About</Link>
