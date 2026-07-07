@@ -1,17 +1,14 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { currentPosts, formatDate } from '../posts'
+import { seoHead } from '../lib/seo'
 
 export const Route = createFileRoute('/insights/')({
-  head: () => ({
-    meta: [
-      { title: 'Insights · Eden Business Concepts' },
-      {
-        name: 'description',
-        content:
-          'Perspectives and tools for leaders who want to build something that lasts — on scaling, leadership formation, conflict, and the heart beneath the work.',
-      },
-    ],
-  }),
+  head: () =>
+    seoHead({
+      title: 'Insights · Eden Business Concepts',
+      description:
+        'Perspectives and tools for leaders who want to build something that lasts — on scaling, leadership formation, conflict, and the heart beneath the work.',
+    }),
   component: Insights,
 })
 
@@ -48,9 +45,15 @@ function Insights() {
                 Download the comparison chart ↓
               </a>
             </div>
+            <p className="note" style={{ marginTop: 14 }}>
+              Prefer to read it here? <Link to="/root-motivations" style={{ color: 'var(--gold)' }}>The three root motivations →</Link>
+            </p>
           </div>
 
           {/* Posts */}
+          <p className="note" style={{ marginTop: 4, marginBottom: 26 }}>
+            After several years focused on the work itself, we're publishing here regularly again.
+          </p>
           <div className="insight-list">
             {posts.map((p) => (
               <Link to="/insights/$slug" params={{ slug: p.slug }} key={p.slug} className="insight-card">

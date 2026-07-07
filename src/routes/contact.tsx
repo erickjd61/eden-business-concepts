@@ -20,6 +20,12 @@ function Contact() {
       </section>
       <section className="prose">
         <div className="wrap">
+          <p style={{ marginTop: 0, marginBottom: 8 }}>
+            <a className="btn btn-gold" href="https://calendly.com/john-erickson-meeting/30min" target="_blank" rel="noopener noreferrer">Book a 30-minute conversation →</a>
+          </p>
+          <p className="note" style={{ marginTop: 0, marginBottom: 36 }}>
+            Pick a time that works — or reach us directly below.
+          </p>
           <h2>Reach us</h2>
           <p>
             <b>Email</b><br />
