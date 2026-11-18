@@ -147,6 +147,10 @@ img{max-width:100%;display:block}
 .testi blockquote{font-family:var(--serif);font-size:17px;line-height:1.5;font-style:italic;color:var(--cream);margin:0;max-width:none;text-align:left}
 .testi figcaption{margin-top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--cream-dim);line-height:1.5}
 .testi figcaption b{display:block;color:var(--gold-br);font-weight:600;margin-bottom:2px}
+.testi blockquote p{margin:0 0 12px}
+.testi blockquote p:last-child{margin-bottom:0}
+.testi-more{margin-top:12px;padding:0;background:none;border:0;cursor:pointer;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-br)}
+.testi-more:hover,.testi-more:focus-visible{text-decoration:underline}
 @media(max-width:820px){.testi-grid{grid-template-columns:1fr;gap:34px}}
 
 /* CTA band */

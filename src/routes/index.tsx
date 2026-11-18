@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { createFileRoute, Link } from '@tanstack/react-router'
 
 import { seoHead } from '../lib/seo'
@@ -236,10 +237,7 @@ function Home() {
           </blockquote>
           <cite><b>David Ballard</b> · Attorney, Legal Aid of Western Michigan</cite>
           <div className="testi-grid">
-            <figure className="testi">
-              <blockquote>"John and Dennis have brought structure, focus, clarity, and accountability into our business with the EOS model. They have led us to move away from operational reactions to intentional growth. Our business would not have the greater future we are moving toward with their insight and leadership."</blockquote>
-              <figcaption><b>Devin Moore</b>Integrator · ServiceMaster Commercial Cleaning Services</figcaption>
-            </figure>
+            <DevinTestimonial />
             <figure className="testi">
               <blockquote>"I am proud to count John Erickson as a mentor and friend… his wisdom and compassion have been a beacon for me throughout the last decade."</blockquote>
               <figcaption><b>Shaun Clarke, PhD</b>Nuclear Engineering Faculty · University of Michigan</figcaption>
@@ -264,5 +262,43 @@ function Home() {
         </div>
       </section>
     </main>
+  )
+}
+
+const DEVIN_SHORT =
+  "John and Dennis at Eden Business Concepts have pushed us to ask and answer harder questions than I would have been willing to tackle on my own. What sets them apart is that while we're working on the business, they're also working on the leaders. Most of the things that hold a business back are heart issues, not business-smarts issues."
+
+const DEVIN_FULL = [
+  "John and Dennis at Eden Business Concepts have pushed us to ask and answer harder questions than I would have been willing to tackle on my own. Because of that, we've moved through difficult seasons faster and addressed issues more head-on than we otherwise would have.",
+  'They bring an outside perspective that is also very familiar with our business, and that combination is incredibly helpful. As we work to move the business forward, they regularly add clarity and accountability along the way.',
+  "What sets them apart is that while we're working on the business, they're also working on the leaders. Most of the things that hold a business back are heart issues, not business-smarts issues. John and Dennis use the business setting to help the individual grow, and they're incredible at it.",
+]
+
+function DevinTestimonial() {
+  const [open, setOpen] = useState(false)
+  return (
+    <figure className="testi">
+      <blockquote id="devin-testimonial">
+        {open
+          ? DEVIN_FULL.map((p, i) => (
+              <p key={i}>
+                {i === 0 ? '"' : ''}
+                {p}
+                {i === DEVIN_FULL.length - 1 ? '"' : ''}
+              </p>
+            ))
+          : `"${DEVIN_SHORT}"`}
+      </blockquote>
+      <button
+        type="button"
+        className="testi-more"
+        aria-expanded={open}
+        aria-controls="devin-testimonial"
+        onClick={() => setOpen((v) => !v)}
+      >
+        {open ? 'Show less' : 'Read more'}
+      </button>
+      <figcaption><b>Devin Moore</b>Chief Operating Officer · ServiceMaster Commercial Cleaning</figcaption>
+    </figure>
   )
 }
